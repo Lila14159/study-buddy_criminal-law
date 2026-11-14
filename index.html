@@ -1,0 +1,3666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HK CrimLaw Life Sim â€” Hong Kong Criminal Law Study Game</title>
+  <style>
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.\!my-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.\!mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.min-w-\[85px\] {
+  min-width: 85px;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1\.5 {
+  gap: 0.375rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.875rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-\[\#58CC02\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 204 2 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#CBD5E1\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#E2E8F0\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#EA2B2B\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 43 43 / var(--tw-border-opacity, 1));
+}
+
+.bg-\[\#58CC02\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 204 2 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#E2E8F0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#F0FDF4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#F7F9FA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 249 250 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FEF2F2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.\!px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.\!py-3 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-44 {
+  padding-bottom: 11rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[19px\] {
+  font-size: 19px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.text-\[\#1E293B\] {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#334155\] {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#46A302\] {
+  --tw-text-opacity: 1;
+  color: rgb(70 163 2 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#475569\] {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#58CC02\] {
+  --tw-text-opacity: 1;
+  color: rgb(88 204 2 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#64748B\] {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#EA2B2B\] {
+  --tw-text-opacity: 1;
+  color: rgb(234 43 43 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.hover\:bg-\[\#F8FAFC\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-\[\#1E293B\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity, 1));
+}
+
+.focus\:border-\[\#58CC02\]:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 204 2 / var(--tw-border-opacity, 1));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:min-w-\[200px\] {
+    min-width: 200px;
+  }
+
+  .sm\:min-w-\[220px\] {
+    min-width: 220px;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:self-end {
+    align-self: flex-end;
+  }
+
+  .sm\:p-8 {
+    padding: 2rem;
+  }
+
+  .sm\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:text-\[26px\] {
+    font-size: 26px;
+  }
+
+  .sm\:text-\[28px\] {
+    font-size: 28px;
+  }
+}
+  </style>
+  <style>
+    /* STRICT TYPOGRAPHY & VISUALIZATION RULES */
+    * {
+      font-family: Arial, Helvetica, sans-serif !important;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #F7F9FA;
+      color: #1E293B;
+      margin: 0;
+      padding: 0;
+      font-size: 19px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Duolingo-style 3D tactile buttons */
+    .duo-btn-primary {
+      background-color: #58CC02;
+      color: #FFFFFF;
+      border: 2px solid #58CC02;
+      border-bottom: 5px solid #46A302;
+      border-radius: 16px;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.3px;
+      transition: transform 0.08s ease, background-color 0.12s ease;
+      cursor: pointer;
+    }
+    .duo-btn-primary:hover:not(:disabled) {
+      background-color: #61E002;
+    }
+    .duo-btn-primary:active:not(:disabled) {
+      transform: translateY(3px);
+      border-bottom-width: 2px;
+    }
+    .duo-btn-primary:disabled {
+      background-color: #E2E8F0;
+      border-color: #E2E8F0;
+      border-bottom-color: #CBD5E1;
+      color: #94A3B8;
+      cursor: not-allowed;
+    }
+
+    .duo-btn-danger {
+      background-color: #EA2B2B;
+      color: #FFFFFF;
+      border: 2px solid #EA2B2B;
+      border-bottom: 5px solid #C81E1E;
+      border-radius: 16px;
+      font-weight: 700;
+      font-size: 20px;
+      transition: transform 0.08s ease;
+      cursor: pointer;
+    }
+    .duo-btn-danger:active {
+      transform: translateY(3px);
+      border-bottom-width: 2px;
+    }
+
+    .duo-btn-secondary {
+      background-color: #FFFFFF;
+      color: #1E293B;
+      border: 2px solid #E2E8F0;
+      border-bottom: 4px solid #CBD5E1;
+      border-radius: 16px;
+      font-weight: 700;
+      font-size: 18px;
+      transition: transform 0.08s ease, background-color 0.12s ease;
+      cursor: pointer;
+    }
+    .duo-btn-secondary:hover {
+      background-color: #F8FAFC;
+    }
+    .duo-btn-secondary:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    /* Tactile option cards */
+    .duo-option {
+      background-color: #FFFFFF;
+      color: #1E293B;
+      border: 2px solid #E2E8F0;
+      border-bottom: 4px solid #CBD5E1;
+      border-radius: 16px;
+      padding: 18px 22px;
+      text-align: left;
+      font-size: 19px;
+      line-height: 1.6;
+      transition: all 0.1s ease;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      width: 100%;
+    }
+    .duo-option:hover:not(:disabled) {
+      background-color: #F8FAFC;
+      border-color: #CBD5E1;
+    }
+    .duo-option:active:not(:disabled) {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+    .duo-option.selected {
+      background-color: #F0FDF4;
+      border-color: #58CC02;
+      border-bottom-color: #46A302;
+    }
+    .duo-option.correct {
+      background-color: #F0FDF4;
+      border-color: #58CC02;
+      border-bottom-color: #46A302;
+    }
+    .duo-option.incorrect {
+      background-color: #FEF2F2;
+      border-color: #EA2B2B;
+      border-bottom-color: #C81E1E;
+    }
+
+    .key-badge {
+      min-width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      border: 2px solid #E2E8F0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 17px;
+      color: #475569;
+      background-color: #FFFFFF;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .duo-option.selected .key-badge,
+    .duo-option.correct .key-badge {
+      border-color: #58CC02;
+      color: #46A302;
+      background-color: #FFFFFF;
+    }
+    .duo-option.incorrect .key-badge {
+      border-color: #EA2B2B;
+      color: #EA2B2B;
+      background-color: #FFFFFF;
+    }
+
+    /* Direct Verbatim Quote Box */
+    .quote-box {
+      background-color: #FFFFFF;
+      border: 2px solid #E2E8F0;
+      border-left: 6px solid #58CC02;
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    /* Clean scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F7F9FA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 639px) {
+      #vault-search {
+        min-width: 0;
+      }
+      #vault-search + div {
+        flex-wrap: wrap;
+      }
+      #bottom-footer {
+        max-height: 60vh;
+        max-height: 60dvh;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- TOP HUD BAR -->
+  <header class="sticky top-0 z-30 bg-white border-b-2 border-[#E2E8F0]">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <!-- Brand + Mode Tabs -->
+      <div class="flex items-center gap-3 flex-wrap">
+        <button onclick="switchTab('simulator')" id="tab-simulator"
+          class="px-4 py-2 rounded-xl font-bold text-[18px] border-2 transition-colors cursor-pointer bg-[#F0FDF4] border-[#58CC02] text-[#1E293B]">
+          Life Simulator
+        </button>
+        <button onclick="switchTab('vault')" id="tab-vault"
+          class="px-4 py-2 rounded-xl font-bold text-[18px] border-2 transition-colors cursor-pointer bg-white border-[#E2E8F0] text-[#475569] hover:bg-[#F8FAFC]">
+          Case &amp; Statute Vault
+        </button>
+      </div>
+
+      <!-- HUD Stats: Streak, XP, Hearts -->
+      <div class="flex items-center gap-5 text-[18px] font-bold">
+        <!-- Daily Streak -->
+        <div class="flex items-center gap-1.5" title="Daily Study Streak">
+          <svg class="w-6 h-6 text-[#58CC02]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.5 2C13.5 2 14.5 5.5 12 8.5C10.5 10.3 9 11.2 9 13.5C9 15.4 10.6 17 12.5 17C14.4 17 16 15.4 16 13.5C16 12.1 15.2 10.9 14.8 10.3C17.5 11.4 19 14.1 19 16.5C19 20.1 16.1 23 12.5 23C8.9 23 6 20.1 6 16.5C6 11.5 10.5 7.5 13.5 2Z"/>
+          </svg>
+          <span id="hud-streak">1</span>
+        </div>
+
+        <!-- XP Points -->
+        <div class="flex items-center gap-1.5" title="Experience Points">
+          <span class="px-2.5 py-0.5 rounded-lg bg-[#F0FDF4] border border-[#58CC02] text-[#46A302] text-[16px]">XP</span>
+          <span id="hud-xp">0</span>
+        </div>
+
+        <!-- Hearts (5 Lives) -->
+        <div class="flex items-center gap-1.5" title="Hearts Remaining">
+          <svg class="w-6 h-6 text-[#EA2B2B]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span id="hud-hearts">5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step Progress Bar (Visible during active scenario) -->
+    <div id="progress-container" class="hidden max-w-4xl mx-auto px-4 pb-3 pt-1">
+      <div class="flex items-center gap-3">
+        <button onclick="exitToHome()" class="text-[#64748B] hover:text-[#1E293B] font-bold text-[18px] px-2 py-1 rounded-lg cursor-pointer" title="Exit Scenario">
+          âœ•
+        </button>
+        <div class="flex-1 h-4 bg-[#E2E8F0] rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-[#58CC02] transition-all duration-300 rounded-full" style="width: 0%;"></div>
+        </div>
+        <span id="progress-label" class="text-[17px] font-bold text-[#475569] min-w-[85px] text-right">Step 1 / 4</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="flex-1 max-w-4xl w-full mx-auto px-4 py-8 pb-44">
+
+    <!-- ========================================== -->
+    <!-- VIEW 1: LIFE SIMULATOR TAB                 -->
+    <!-- ========================================== -->
+    <section id="view-simulator">
+
+      <!-- HOME / LAUNCHPAD SCREEN -->
+      <div id="sim-home" class="space-y-6">
+        <div class="bg-white border-2 border-[#E2E8F0] rounded-2xl p-6 sm:p-8">
+          <div class="inline-block px-3 py-1 rounded-lg bg-[#F0FDF4] border border-[#58CC02] text-[#46A302] font-bold text-[16px] mb-3">
+            HONG KONG CRIMINAL LAW SIMULATOR
+          </div>
+          <h1 class="text-[26px] sm:text-[28px] font-bold text-[#1E293B] mb-3 leading-snug">
+            HK CrimLaw Life Sim
+          </h1>
+          <p class="text-[19px] text-[#334155] mb-6 leading-relaxed">
+            Step into a random daily life in Hong Kong. Spot the key facts, identify the legal issue, apply the exact Ordinance or common law rule, and test controlling precedents.
+          </p>
+
+          <!-- Topic / Exam Filter -->
+          <div class="mb-6">
+            <label for="topic-filter" class="block font-bold text-[18px] text-[#1E293B] mb-2">
+              Choose Life Assignment Mode:
+            </label>
+            <select id="topic-filter"
+              class="w-full bg-white border-2 border-[#E2E8F0] rounded-xl px-4 py-3.5 text-[19px] font-bold text-[#1E293B] focus:outline-none focus:border-[#58CC02]">
+              <option value="all">Random Daily Life (All Scenarios)</option>
+              <option value="exam">Past Exam Paper Focus (LW3606A/LW5606A Q2â€“Q4)</option>
+              <option value="fundamentals">Part I: Actus Reus, Mens Rea &amp; Strict Liability</option>
+              <option value="person">Part II: Homicide, Non-Fatal &amp; Sexual Offences</option>
+              <option value="property">Part III &amp; IV: Theft, Computer &amp; Public Order</option>
+              <option value="complex">Part V &amp; Ch 1: Defences, Inchoate &amp; Procedure</option>
+            </select>
+          </div>
+
+          <!-- Primary CTA Button -->
+          <button onclick="startNewLife()" class="duo-btn-primary w-full py-4 px-6 text-center">
+            Start New Life
+          </button>
+        </div>
+
+        <!-- Study Progress Summary Card -->
+        <div class="bg-white border-2 border-[#E2E8F0] rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-[22px] font-bold text-[#1E293B] mb-1">Your Casebook Progress</h2>
+            <p class="text-[18px] text-[#475569]" id="completed-summary">
+              0 of 12 daily life cases completed.
+            </p>
+          </div>
+          <button onclick="resetProgress()" class="duo-btn-secondary px-4 py-2.5 text-[17px]">
+            Refill Hearts &amp; Reset
+          </button>
+        </div>
+
+        <!-- Scenario Directory Preview -->
+        <div class="bg-white border-2 border-[#E2E8F0] rounded-2xl p-6">
+          <h3 class="text-[22px] font-bold text-[#1E293B] mb-4">Available Life Scenarios (Click to Jump or Click Start New Life)</h3>
+          <div id="scenario-list-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVE SCENARIO STEP SCREEN -->
+      <div id="sim-stage" class="hidden space-y-6">
+        <!-- Character & Setting Banner -->
+        <div class="bg-white border-2 border-[#E2E8F0] rounded-2xl p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span id="stage-badge" class="px-3 py-1 rounded-lg bg-[#F0FDF4] border border-[#58CC02] text-[#46A302] font-bold text-[16px]">
+              SCENARIO
+            </span>
+            <span id="stage-step-type" class="font-bold text-[17px] text-[#64748B]">
+              STEP 1: KEY FACTS
+            </span>
+          </div>
+
+          <h2 id="stage-title" class="text-[24px] sm:text-[26px] font-bold text-[#1E293B] mb-2">
+            Scenario Title
+          </h2>
+          <p id="stage-role" class="text-[18px] font-bold text-[#46A302] mb-4">
+            Assigned Identity: ...
+          </p>
+
+          <!-- Daily Life Story Box -->
+          <div class="bg-[#F7F9FA] border-2 border-[#E2E8F0] rounded-xl p-5 mb-5">
+            <p id="stage-story" class="text-[19px] text-[#1E293B] leading-relaxed">
+              Story text...
+            </p>
+          </div>
+
+          <!-- Optional Verbatim Quote in Question Prompt -->
+          <div id="stage-prompt-quote" class="quote-box hidden">
+            <div class="text-[16px] font-bold text-[#46A302] uppercase mb-1" id="stage-prompt-quote-source">
+              STATUTORY / JUDICIAL TEXT
+            </div>
+            <p class="text-[18px] italic text-[#1E293B]" id="stage-prompt-quote-text"></p>
+          </div>
+
+          <!-- Explicit Question Prompt -->
+          <h3 id="stage-question" class="text-[22px] font-bold text-[#1E293B] mt-2">
+            Question prompt?
+          </h3>
+        </div>
+
+        <!-- 4 Tactile Options -->
+        <div id="options-container" class="space-y-3.5">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+
+      <!-- SCENARIO COMPLETION / OUT OF HEARTS SCREEN -->
+      <div id="sim-summary" class="hidden bg-white border-2 border-[#E2E8F0] rounded-2xl p-6 sm:p-8 text-center space-y-6">
+        <div id="summary-badge" class="inline-block px-4 py-1.5 rounded-xl bg-[#F0FDF4] border-2 border-[#58CC02] text-[#46A302] font-bold text-[18px]">
+          CASE CLOSED
+        </div>
+        <h2 id="summary-title" class="text-[26px] sm:text-[28px] font-bold text-[#1E293B]">
+          Life Simulation Complete!
+        </h2>
+        <p id="summary-desc" class="text-[19px] text-[#334155] max-w-2xl mx-auto">
+          You analyzed every legal step accurately.
+        </p>
+
+        <!-- Key Takeaways Box -->
+        <div id="summary-takeaways" class="text-left bg-[#F7F9FA] border-2 border-[#E2E8F0] rounded-2xl p-5 space-y-3">
+          <!-- Populated via JS -->
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+          <button onclick="startNewLife()" class="duo-btn-primary flex-1 py-4 px-6">
+            Start Another Random Life
+          </button>
+          <button onclick="exitToHome()" class="duo-btn-secondary py-4 px-6">
+            Back to Menu
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW 2: CASE & STATUTE VAULT TAB           -->
+    <!-- ========================================== -->
+    <section id="view-vault" class="hidden space-y-6">
+      <div class="bg-white border-2 border-[#E2E8F0] rounded-2xl p-6">
+        <h1 class="text-[26px] font-bold text-[#1E293B] mb-2">
+          Case &amp; Statute Vault
+        </h1>
+        <p class="text-[19px] text-[#475569] mb-5">
+          Complete database from Simon SY So, <em>Criminal Law in Hong Kong</em> (1st Ed, 2020) Table of Cases and Table of Legislation.
+        </p>
+
+        <!-- Search & Filter Controls -->
+        <div class="flex flex-col sm:flex-row gap-3 mb-4">
+          <input type="text" id="vault-search" oninput="renderVault()"
+            placeholder="Search case name, Cap number, section, or legal rule..."
+            class="flex-1 bg-white border-2 border-[#E2E8F0] rounded-xl px-4 py-3 text-[19px] text-[#1E293B] focus:outline-none focus:border-[#58CC02]" />
+
+          <div class="flex gap-2">
+            <button onclick="setVaultFilter('all')" id="vfilter-all"
+              class="px-4 py-3 rounded-xl font-bold text-[18px] border-2 bg-[#F0FDF4] border-[#58CC02] text-[#1E293B] cursor-pointer">
+              All
+            </button>
+            <button onclick="setVaultFilter('case')" id="vfilter-case"
+              class="px-4 py-3 rounded-xl font-bold text-[18px] border-2 bg-white border-[#E2E8F0] text-[#475569] cursor-pointer">
+              Cases
+            </button>
+            <button onclick="setVaultFilter('statute')" id="vfilter-statute"
+              class="px-4 py-3 rounded-xl font-bold text-[18px] border-2 bg-white border-[#E2E8F0] text-[#475569] cursor-pointer">
+              Legislation
+            </button>
+          </div>
+        </div>
+
+        <div class="text-[17px] font-bold text-[#64748B]" id="vault-count">
+          Showing entries...
+        </div>
+      </div>
+
+      <!-- Vault Cards List -->
+      <div id="vault-list" class="space-y-4">
+        <!-- Populated via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- DUOLINGO BOTTOM FEEDBACK & ACTION FOOTER   -->
+  <!-- ========================================== -->
+  <footer id="bottom-footer" class="hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t-2 border-[#E2E8F0] transition-colors duration-150">
+    <div class="max-w-4xl mx-auto px-4 py-4 sm:py-5">
+      <!-- State A: Pre-check ("Check Answer") -->
+      <div id="footer-precheck" class="flex items-center justify-between gap-4">
+        <div class="hidden sm:block text-[18px] text-[#64748B] font-bold">
+          Press keys 1â€“4 to select, Enter to check.
+        </div>
+        <button id="btn-check" onclick="checkAnswer()" disabled class="duo-btn-primary w-full sm:w-auto sm:min-w-[220px] py-3.5 px-8 ml-auto">
+          Check Answer
+        </button>
+      </div>
+
+      <!-- State B: Post-check Feedback Banner -->
+      <div id="footer-feedback" class="hidden space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+          <div class="flex-1 space-y-2">
+            <div class="flex items-center gap-2.5">
+              <span id="fb-icon" class="w-8 h-8 rounded-full flex items-center justify-center font-bold text-white text-[18px]">âœ“</span>
+              <h4 id="fb-heading" class="text-[22px] font-bold">Correct!</h4>
+            </div>
+            <p id="fb-explanation" class="text-[18px] text-[#1E293B] leading-relaxed">
+              Explanation goes here.
+            </p>
+            <!-- Verbatim Direct Quote Box -->
+            <div class="quote-box !my-2 !py-3 !px-4">
+              <div id="fb-quote-source" class="text-[16px] font-bold text-[#46A302] mb-1">
+                Source Citation
+              </div>
+              <p id="fb-quote-text" class="text-[18px] italic text-[#1E293B]">
+                "Direct quote..."
+              </p>
+            </div>
+          </div>
+
+          <div class="sm:self-end">
+            <button id="btn-continue" onclick="nextStep()" class="duo-btn-primary w-full sm:min-w-[200px] py-3.5 px-8">
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // =========================================================================
+    // 1. DATABASE: 12 COMPREHENSIVE DAILY LIFE SCENARIOS (TEXTBOOK + PAST EXAM)
+    // =========================================================================
+    const SCENARIOS = [
+      {
+        id: "exam-q2-mong-kok",
+        category: "exam",
+        badge: "PAST EXAM Q2 â€¢ HOMICIDE & COMPLICITY",
+        title: "Mong Kok Alley Ambush",
+        role: "You are Vincent & Derek, syndicate foot soldiers in Mong Kok.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "You (Vincent) want revenge on 'Mad Dog' Ma for your brother's death. You tell Derek: 'We're not killing him, we're just going to scare him.' In a Mong Kok alley, Ma charges with a knife. You panic and fire wildly. The bullet misses Ma and kills passerby Ms Hu. Meanwhile, Derek throws a glass bottle at Ma's associate. It misses and hits a hotpot gas canister in a restaurant, burning elderly Mr Wong (who has an undiagnosed heart condition), causing his death three days later.",
+            question: "Which set of facts is legally decisive for Vincent's liability for Ms Hu's death?",
+            options: [
+              "Vincent acted in pure self-defence because Mad Dog Ma was unarmed.",
+              "Vincent fired a lethal weapon with unlawful intent to frighten/harm Ma, and the bullet struck unintended victim Ms Hu.",
+              "Ms Hu walked out of the bakery without looking for gang fights.",
+              "Vincent never intended to kill Mad Dog Ma, so no crime occurred."
+            ],
+            correct: 1,
+            explanation: "Under the doctrine of transferred malice, if a defendant possesses the mens rea for a crime against person A and accidentally causes the actus reus to person B, the mens rea transfers. However, self-defence may also be raised if Vincent honestly believed force was necessary against Ma's knife charge.",
+            quoteSource: "R v Latimer (1886) 17 QBD 359, per Lord Coleridge CJ (Textbook [3-61])",
+            quoteText: "It is common knowledge that a man who has unlawful and malicious intent against another, and, in attempting to carry it out, injures a third person, is guilty of what the law deems malice against the person injured..."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "Elderly diner Mr Wong had a severe, undiagnosed pre-existing heart condition that accelerated his death after Derek's thrown bottle ignited the hotpot gas canister. Meanwhile, Mad Dog Ma suffered no gunshot wound, but the extreme emotional shock triggered a fatal/catastrophic stroke due to his pre-existing vascular disease.",
+            question: "What legal rule governs Mr Wong's undiagnosed heart condition in causation?",
+            options: [
+              "The thin-skull (eggshell-skull) rule: the defendant must take his victim as he finds him.",
+              "Novus actus interveniens: Mr Wong's weak heart breaks the chain of causation.",
+              "Contributory negligence: Mr Wong should not eat hotpot with a heart condition.",
+              "The year-and-a-day rule under section 33C of OAPO."
+            ],
+            correct: 0,
+            explanation: "A defendant cannot claim the chain of causation is broken because the victim had a hidden physical vulnerability. Derek must take Mr Wong as he finds him.",
+            quoteSource: "Specimen Direction 20 / R v Blaue [1975] 3 All ER 446 (Textbook [2-80])",
+            quoteText: "The rule is that an accused takes his victim as he finds him. So, if there is something unusual about the victim or he has some particular characteristic such that the consequence of the defendant's act is more serious than could have been foreseen, this is irrelevant..."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Derek threw a heavy glass bottle at Ma's associate, which missed, flew through a restaurant window, and caused a gas explosion killing Mr Wong. Look at the elements of Unlawful and Dangerous Act Manslaughter.",
+            question: "What mens rea is required for Derek's Unlawful and Dangerous Act Manslaughter?",
+            options: [
+              "Direct intent to kill Mr Wong or cause him grievous bodily harm.",
+              "Subjective foresight by Derek that a gas explosion would occur.",
+              "The mens rea for the unlawful base crime (assault/battery), plus an objective test of whether all sober and reasonable people would recognise the risk of some physical harm.",
+              "Gross negligence by the restaurant owner in placing the hotpot stove."
+            ],
+            correct: 2,
+            explanation: "For unlawful and dangerous act manslaughter, the prosecution proves the mens rea of the base unlawful act (throwing the bottle at the associate) and an objective risk of some physical harm. Note also: for Ma's stroke from shock alone, R v Dawson holds emotional shock without physical harm is insufficient for dangerousness unless physical frailty was obvious.",
+            quoteSource: "R v Church [1966] 1 QB 59, per Edmund-Davies J (Textbook [5-103])",
+            quoteText: "For such a verdict inexorably to follow, the unlawful act must be such as all sober and reasonable people would inevitably recognise must subject the other person to, at least, the risk of some harm resulting therefrom, albeit not serious harm."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "One year later, Mad Dog Ma calls hitman Jimmy from prison for 'another job' without details. Jimmy hears separately what Vincent and Derek did and drives his car at speed at them at a Mong Kok dai pai dong, causing minor abrasions as they dive away.",
+            question: "Under Hong Kong law, can Mad Dog Ma be convicted via Joint Enterprise for Jimmy's car attack?",
+            options: [
+              "Yes, because Chan Wing Siu makes any gang leader automatically liable for all future acts.",
+              "No, because Hong Kong abolished Joint Enterprise in R v Jogee.",
+              "No, because there was no agreement or common unlawful enterprise covering this attack, and Ma lacked foresight/intention regarding Jimmy's independent revenge.",
+              "Yes, because Jimmy is an innocent agent under R v Stringer."
+            ],
+            correct: 2,
+            explanation: "In HKSAR v Chan Kam Shing (2016) 19 HKCFAR 640, the CFA retained Chan Wing Siu joint enterprise in Hong Kong (rejecting R v Jogee). However, Ma only mentioned 'another job' without details and did not agree to or foresee Jimmy's solo car attack.",
+            quoteSource: "HKSAR v Chan Kam Shing (2016) 19 HKCFAR 640, per Ribeiro PJ (Textbook [15-54])",
+            quoteText: "Liability is independently based on each defendant's participation in a joint criminal enterprise with the requisite mental state to constitute the offence relevant to the defendant in question."
+          }
+        ]
+      },
+      {
+        id: "exam-q3-stanley-rugby",
+        category: "exam",
+        badge: "PAST EXAM Q3 â€¢ ASSAULT, POLICE & IMPOSSIBLE ATTEMPT",
+        title: "Stanley Rugby Match & Dinner Table",
+        role: "You are Suarez (rugby player) and Benitez (coach) in Stanley.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "During a rugby match against PERFECT (auxiliary police team), you (Suarez) bite an opponent's shoulder, drawing blood. As you walk off, uniformed spectator PC Chan grabs your testicles saying 'you ought to be punished for that'. After Chan lets go, you punch Chan in the face, breaking his nose, and give a false name upon arrest even though the officers already know who you are.",
+            question: "Why is the sports consent defence unavailable for Suarez's bite on the opponent?",
+            options: [
+              "Because rugby is an illegal sport in Hong Kong.",
+              "Because intentional biting that draws blood falls outside the rules and implied consent of the game.",
+              "Because the opponent was an auxiliary police officer.",
+              "Because biting only amounts to technical assault without contact."
+            ],
+            correct: 1,
+            explanation: "In sports, participants impliedly consent to physical contact within the rules of the game, but deliberate off-the-ball or foul violence like biting or punching is criminal (OAPO s 39 ABH or s 19 wounding).",
+            quoteSource: "R v Billinghurst [1978] Crim LR 553 / R v Barnes [2005] 2 All ER 113 (Textbook [6-83]â€“[6-84])",
+            quoteText: "Criminal prosecutions should only be initiated when the violence is sufficiently grave to be categorised as criminal... off-the-ball violence would, nonetheless, not be tolerated."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "PC Chan was in uniform as a spectator, grabbed Suarez's testicles to 'punish' him, and had already released his grip before Suarez punched Chan's nose. Later, Suarez gave a false name to officers who already knew his identity.",
+            question: "What are the two key legal issues regarding PC Chan and Suarez?",
+            options: [
+              "Whether PC Chan was acting in due execution of duty when grabbing Suarez, and whether Suarez's punch was lawful self-defence or unlawful retaliation.",
+              "Whether Suarez committed burglary of the rugby pitch.",
+              "Whether PC Chan had diplomatic immunity.",
+              "Whether giving a false name constitutes fraud under TO s 16A."
+            ],
+            correct: 0,
+            explanation: "PC Chan acted unlawfully outside his duty when grabbing Suarez to 'punish' him. Once Chan released his grip, Suarez's punch was retaliation rather than necessary self-defence. Giving a false name may engage PFO s 63 if done with intent to mislead.",
+            quoteSource: "Police Force Ordinance (Cap 232) s 63 (Textbook [6-42])",
+            quoteText: "Any person who assaults or resists any police officer acting in the execution of his duty... or who, by the giving of false information with intent to defeat or delay the ends of justice, wilfully misleads or attempts to mislead any such officer, shall be liable..."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Meanwhile, Coach Benitez bought a bag of white powder from dealer Shady, believing it was 10g of cocaine to give Suarez as a match bonus. Chemical analysis later proves the powder was actually plain flour.",
+            question: "Under which statutory provision is Benitez liable despite the bag containing flour?",
+            options: [
+              "He is completely innocent because flour is not a dangerous drug.",
+              "Crimes Ordinance (Cap 200) s 159G(2) (Attempting the impossible) and Dangerous Drugs Ordinance s 4(1)(b)/(c).",
+              "Theft Ordinance (Cap 210) s 17 (Obtaining property by deception).",
+              "Pharmacy and Poisons Ordinance (Cap 138) s 23 (Part 1 Poisons)."
+            ],
+            correct: 1,
+            explanation: "Under CO s 159G(2), a person may be guilty of attempting to commit an offence (attempting to possess/traffic dangerous drugs) even though the facts render the completed offence impossible.",
+            quoteSource: "Crimes Ordinance (Cap 200) s 159G(2) (Textbook [15-27])",
+            quoteText: "A person may be guilty of attempting to commit an offence to which this section applies even though the facts are such that the commission of the offence is impossible."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Benitez returns home to find uniformed PC Lionel trying to handcuff his wife Carmen during a raid. Carmen shouts 'Use a knife!' Lionel warns 'Don't you dare, she's under arrest.' Benitez grabs a kitchen knife and stabs Lionel in the neck, killing him instantly.",
+            question: "Which case confirms Benitez is guilty of attempted drug trafficking/possession despite the flour, and what is his liability for PC Lionel's death?",
+            options: [
+              "Anderton v Ryan acquits Benitez of drugs; self-defence acquits him of murder.",
+              "R v Shivpuri convicts Benitez of impossible attempt; stabbing a uniformed officer in the neck establishes intent to kill/GBH for Murder (OAPO s 2).",
+              "R v White reduces the stabbing to attempted murder.",
+              "HKSAR v Hung Chan Wa acquits Benitez because of flour."
+            ],
+            correct: 1,
+            explanation: "R v Shivpuri overruled Anderton v Ryan, confirming guilt where the defendant intends to deal with drugs even if the substance is harmless. Stabbing PC Lionel in the neck shows direct intent to kill or cause GBH (murder), and Lionel was acting in due execution of duty under PFO s 50(1).",
+            quoteSource: "R v Shivpuri [1987] AC 1, per Lord Bridge (Textbook [15-46])",
+            quoteText: "What turns what would otherwise, from the point of view of the criminal law, be an innocent act into a crime is the intent of the actor to commit an offence."
+          }
+        ]
+      },
+      {
+        id: "exam-q4-tai-po-rainstorm",
+        category: "exam",
+        badge: "PAST EXAM Q4 â€¢ STRICT LIABILITY, TRAFFIC & DRUGS",
+        title: "Tai Po Rainstorm & Wedding Night",
+        role: "You are Nate (25) dating Reanna (15) in Tai Po.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "You (Nate, 25) meet Reanna (15) on a dating app where she falsely claims to be 17, though she truthfully states she attends a school for intellectually disabled pupils. One year later, you marry her. Before that, during a rainstorm, you drive at 80 km/h, skid into Beverley's car (which has broken brake lights), and slap Beverley's face during an argument.",
+            question: "What offence did Nate commit when slapping Beverley's face during the roadside argument?",
+            options: [
+              "Wounding with intent under OAPO s 17.",
+              "Common assault (battery) under OAPO s 40, as slapping is an intentional application of unlawful physical force.",
+              "No offence, because Beverley had broken brake lights.",
+              "Criminal intimidation under Crimes Ordinance s 24."
+            ],
+            correct: 1,
+            explanation: "Slapping another person's face is a classic battery (punishable under OAPO s 40). Broken brake lights do not justify physical violence.",
+            quoteSource: "HKSAR v Ng Man Yuen Avery (2019) 22 HKCFAR 241 (Textbook [6-3])",
+            quoteText: "Any beating, touching or laying hold of a person with the relevant state of mind in a hostile manner is a battery."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "In the Tai Po rainstorm, Nate drove at the 80 km/h speed limit, braked 60 metres behind traffic, skidded, and caused whiplash to Reanna. On their wedding night (when Reanna was 16), Reanna had sexual intercourse with Nate without disclosing she was HIV-positive, infecting him.",
+            question: "What is the key issue regarding Reanna's non-disclosure of HIV during consensual marital sex?",
+            options: [
+              "Whether non-disclosure of an STI vitiates consent to rape or constitutes inflicting GBH under OAPO s 19.",
+              "Whether Reanna committed theft of Nate's health.",
+              "Whether Reanna is liable for dangerous driving.",
+              "Whether marriage is void under the Marriage Ordinance."
+            ],
+            correct: 0,
+            explanation: "Under R v Clarence (1888) 22 QBD 23 (discussed at [6-33] and [6-93]), fraud as to health/infection does not vitiate consent to sexual intercourse (not rape), though modern cases distinguish reckless infliction of biological GBH under OAPO s 19 if she knew and foresaw the risk of transmission.",
+            quoteSource: "Chan Wai Hung v HKSAR (2000) 3 HKCFAR 288, per Bokhary PJ (Textbook [7-18])",
+            quoteText: "What vitiates consent to an act is deception either as to the identity of the person doing the act or as to the nature of the act... In this area, the law is concerned with the nature of the act and not its purpose."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Suppose Nate had sexual intercourse with Reanna while she was still under 16 (before their marriage), honestly believing her dating profile that she was 17. Look at section 124 of the Crimes Ordinance (Cap 200).",
+            question: "Does Nate's honest belief that Reanna was 17 provide a defence under CO s 124?",
+            options: [
+              "Yes, because the prosecution must prove he knew she was under 16.",
+              "Yes, if his belief was held on reasonable grounds.",
+              "No. CO s 124 is an offence of absolute liability; honest or reasonable belief as to age is no defence.",
+              "Yes, under the halfway-house rule in Hin Lin Yee."
+            ],
+            correct: 2,
+            explanation: "Section 124 of the Crimes Ordinance creates an offence of absolute liability to protect young girls. A mistaken belief that the girl was 16 or over is no defence.",
+            quoteSource: "Crimes Ordinance (Cap 200) s 124(1) & HKSAR v So Wai Lun (2006) 9 HKCFAR 530 (Textbook [7-37]â€“[7-39])",
+            quoteText: "Subject to subsection (2), a man who has unlawful sexual intercourse with a girl under the age of 16 shall be guilty of an offence and shall be liable on conviction on indictment to imprisonment for five years."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Reanna gives Nate money to order fentanyl (a dangerous drug) from overseas, but Nate instead orders cannabis (also a dangerous drug) for his own anxiety.",
+            question: "Is Nate guilty of possessing/importing a dangerous drug even though he ordered cannabis instead of fentanyl?",
+            options: [
+              "No, because he deviated from Reanna's instructions.",
+              "Yes, because both fentanyl and cannabis are dangerous drugs under DDO Cap 134, and mistake as to the specific type of drug is no defence.",
+              "No, because he only intended to use it for personal anxiety.",
+              "Only if he sold the cannabis to Beverley."
+            ],
+            correct: 1,
+            explanation: "Under Warner v MPC and R v James McNamara, knowledge of the existence of a controlled substance suffices; a mistake as to which particular dangerous drug it is does not negate possession or importation under DDO ss 4 and 8.",
+            quoteSource: "R v James McNamara (1988) 87 Cr App R 246 (Textbook [10-21])",
+            quoteText: "Secondly, a mere mistake as to the quality of a thing under the defendant's control is not enough to prevent him being in possession. For instance, if a man is in possession of heroin, believing it to be cannabis..."
+          }
+        ]
+      },
+      {
+        id: "ch2-single-transaction",
+        category: "fundamentals",
+        badge: "CHAPTER 2 â€¢ ACTUS REUS & CONCURRENCE",
+        title: "Aberdeen Harbour & Single Transaction",
+        role: "You are involved in a violent dispute near Aberdeen Harbour.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "During a late-night confrontation in a warehouse near Aberdeen Harbour, you strike a victim on the head with a metal bar, intending to cause grievous bodily harm. Thinking the victim is already dead, you drive to the pier and throw the unconscious body into the sea to hide the crime. Autopsy reveals the victim died from drowning, not the head blow.",
+            question: "What is the apparent legal problem raised by these facts?",
+            options: [
+              "There is no human being in rerum natura.",
+              "Lack of concurrence in time: when you had mens rea (the blow), the victim did not die; when you caused death (drowning), you thought he was already dead.",
+              "The victim consented to the fight.",
+              "Throwing a body into the sea is only a regulatory offence."
+            ],
+            correct: 1,
+            explanation: "Normally, actus reus and mens rea must coincide at the same point in time (Fowler v Padget). Here, the blow carried mens rea without causing death, while the disposal caused death without separate intent to kill.",
+            quoteSource: "Fowler v Padget (1798) 7 TR 509, per Lord Kenyon CJ (Textbook [2-5])",
+            quoteText: "The intent and the act must both concur to constitute the crime."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "Your defence counsel argues you cannot be convicted of murder because you lacked the mens rea for murder at the exact moment you threw the body into Aberdeen Harbour.",
+            question: "How do Hong Kong courts resolve the separation in time between the initial assault and the fatal disposal of the body?",
+            options: [
+              "By treating the entire sequence as an 'indivisible whole' or single transaction.",
+              "By acquitting the defendant of all homicide charges.",
+              "By applying the doctrine of transferred malice.",
+              "By invoking strict liability under Gammon."
+            ],
+            correct: 0,
+            explanation: "Where the initial unlawful act and subsequent disposal are part of one continuous sequence of events (especially to conceal the crime), the law treats them as a single transaction.",
+            quoteSource: "Thabo Meli v The Queen [1954] 1 All ER 373, per Lord Reid (Textbook [2-10])",
+            quoteText: "It appears to their Lordships impossible to divide up what was really one series of acts in this way... it is much too refined a ground of judgment to say that, because they were under a misapprehension at one stage... they are to escape the penalties of the law."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Compare R v Le Brun [1992] QB 61 with Thabo Meli: in Le Brun, a husband knocked his wife unconscious and accidentally dropped her on the pavement while dragging her to conceal the assault.",
+            question: "When does the Single Transaction Rule cease to apply according to Lord Lane CJ in R v Le Brun?",
+            options: [
+              "Whenever more than 5 minutes elapse between the two acts.",
+              "If the second act was genuinely designed to help or rescue the victim rather than conceal the crime.",
+              "Whenever the second act is accidental rather than deliberate.",
+              "Whenever the victim dies of drowning."
+            ],
+            correct: 1,
+            explanation: "In R v Le Brun, Lord Lane CJ distinguished actions designed to conceal the assault (which preserve the single transaction) from genuine attempts to assist the victim (which break the nexus).",
+            quoteSource: "R v Le Brun [1992] QB 61, per Lord Lane CJ (Textbook [2-14])",
+            quoteText: "That is certainly so where the appellant's subsequent actions which caused death, after the initial unlawful blow, are designed to conceal his commission of the original unlawful assault."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "You argue on appeal that you only intended to cause grievous bodily harm during the initial strangulation/blow, not death, before dumping the victim into the Hong Kong harbour.",
+            question: "Which Hong Kong Court of Appeal decision confirms your murder conviction under the Single Transaction Rule?",
+            options: [
+              "HKSAR v Wan Kim Chung [2013] HKCU 1127 (and R v Hui Yiu Fai [1993] 1 HKC 223).",
+              "HKSAR v Ng Man Yuen Avery (2019) 22 HKCFAR 241.",
+              "HKSAR v Cheng Ka Yee (2019) 22 HKCFAR 97.",
+              "Sin Kam Wah v HKSAR (2005) 8 HKCFAR 192."
+            ],
+            correct: 0,
+            explanation: "In HKSAR v Wan Kim Chung, the defendant strangled the victim unconscious intending GBH and threw her into the sea thinking she was dead; the Court of Appeal upheld his murder conviction under the single transaction rule.",
+            quoteSource: "HKSAR v Wan Kim Chung [2013] HKCU 1127, per Yeung VP & McWalters J (Textbook [2-19])",
+            quoteText: "...the person disposing of the body will be guilty of murder if, as a matter of fact, the act rendering the person unconscious and the dispositive act causing death can properly be viewed as part of one transaction, a continuous course of conduct, or a sufficiently connected series or sequence of events."
+          }
+        ]
+      },
+      {
+        id: "ch2-omissions-duty",
+        category: "fundamentals",
+        badge: "CHAPTER 2 â€¢ OMISSIONS & DUTY TO ACT",
+        title: "Kowloon Tong Home Care & Omission",
+        role: "You live in a flat in Kowloon Tong caring for an infirm relative.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "Your elderly aunt, who suffers from severe dementia and mobility loss, moves into your Kowloon Tong flat. You collect her pension and buy her food occasionally. Soon she becomes completely bedridden and develops infected bedsores. You neither summon a doctor nor call social services, and she dies from neglect and starvation.",
+            question: "Can a failure to act (an omission) constitute the actus reus of manslaughter in Hong Kong?",
+            options: [
+              "No, criminal law only punishes positive physical acts.",
+              "Yes, where the defendant owes a recognised legal duty of care to act and breaches it with gross negligence.",
+              "Only if there is a written contract signed before a solicitor.",
+              "No, unless the defendant physically locked the door."
+            ],
+            correct: 1,
+            explanation: "While criminal liability generally requires a positive act, common law offences like murder and manslaughter can be committed by omission when a legal duty to act exists.",
+            quoteSource: "R v Miller [1983] 2 AC 161, per Lord Diplock (Textbook [2-26])",
+            quoteText: "I venture to think that the habit of lawyers to talk of 'actus reus', suggestive as it is of action rather than inaction, is responsible for any erroneous notion that failing to act cannot give rise to criminal liability..."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "You are not the aunt's parent or spouse, and you are not a licensed medical doctor. Yet you brought her into your home and undertook her care.",
+            question: "On what legal basis did a duty of care arise between you and your aunt?",
+            options: [
+              "Official duty as a public officer.",
+              "Voluntary assumption of a duty of care for a helpless person.",
+              "Statutory duty under the Road Traffic Ordinance.",
+              "Duty of a railway gatekeeper."
+            ],
+            correct: 1,
+            explanation: "Taking a helpless, infirm person into one's home and undertaking to look after them creates a voluntary assumption of a duty of care.",
+            quoteSource: "R v Stone and Dobinson [1977] QB 354, per Geoffrey Lane LJ (Textbook [2-41])",
+            quoteText: "[The jurors] were entitled to conclude that once Fanny became helplessly infirm... the appellants were, in the circumstances, obliged either to summon help or else to care for Fanny themselves."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "In a separate incident the same week, you fall asleep holding a lit cigarette in your bedroom. You wake up to find the mattress smouldering. Instead of putting it out or calling the Fire Services Department, you simply walk into the living room and go back to sleep, letting the flat burn.",
+            question: "What legal duty applies when you accidentally create a dangerous situation?",
+            options: [
+              "No duty exists because falling asleep with a cigarette was accidental.",
+              "A positive duty to take reasonable steps to remove or reduce the danger once you become aware of it.",
+              "Only a civil duty to pay the landlord.",
+              "You can rely on lawful excuse under Crimes Ordinance s 64."
+            ],
+            correct: 1,
+            explanation: "Under R v Miller, if a person inadvertently creates a dangerous situation and becomes aware of it, failing to take reasonable steps to counteract the danger supplies the actus reus of arson/criminal damage.",
+            quoteSource: "R v Miller [1983] 2 AC 161, per Lord Diplock (Textbook [2-47])",
+            quoteText: "the accused is guilty... if, when he does become aware that the events in question have happened as a result of his own act, he does not try to prevent or reduce the risk of damage by his own efforts or if necessary by sending for help from the fire brigade..."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Compare R v Miller with R v Evans [2010] 1 All ER 13, where a sister supplied heroin to her half-sister and failed to call medical help when she overdosed.",
+            question: "How did the Court of Appeal in R v Evans apply R v Miller to drug overdoses?",
+            options: [
+              "Supplying the dangerous drug created a life-threatening situation, imposing a duty to summon medical help upon realising the overdose.",
+              "Self-injection by the victim always absolves the supplier of any duty of care.",
+              "A duty of care only exists between parents and children under 10.",
+              "Evans was acquitted because she was not a doctor."
+            ],
+            correct: 0,
+            explanation: "In R v Evans, the Court of Appeal extended the Miller duty-to-remove-danger principle to gross negligence manslaughter where the defendant contributed to creating a life-threatening risk and failed to seek medical aid.",
+            quoteSource: "Textbook Chapter 2: Actus Reus [2-48] (citing R v Evans [2010] 1 All ER 13)",
+            quoteText: "Miller was applied in R v Evans, in which the defendant supplied a dangerous drug to the victim and failed to seek medical assistance when the victim became ill as a result of taking those drugs."
+          }
+        ]
+      },
+      {
+        id: "ch3-recklessness-fire",
+        category: "fundamentals",
+        badge: "CHAPTER 3 â€¢ MENS REA & SUBJECTIVE RECKLESSNESS",
+        title: "Central Back-Alley Bin Fire",
+        role: "You are a 12-year-old student in Central.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "Late at night behind a shop in Central, you and your 11-year-old friend set fire to old newspapers under a plastic wheelie-bin and leave, thinking the fire will naturally burn itself out on the concrete. Instead, the fire spreads to the shop building and causes HK$5 million in damage. You genuinely did not foresee any risk that the building would catch fire.",
+            question: "What offence are you charged with under the Crimes Ordinance (Cap 200)?",
+            options: [
+              "Theft under Theft Ordinance s 2.",
+              "Arson (destroying or damaging property by fire) under Crimes Ordinance ss 60(1) and 60(3).",
+              "Loitering under Crimes Ordinance s 160.",
+              "Unlawful assembly under Public Order Ordinance s 18."
+            ],
+            correct: 1,
+            explanation: "Under section 60(3) of the Crimes Ordinance (Cap 200), an offence under section 60 committed by destroying or damaging property by fire must be charged as arson.",
+            quoteSource: "Crimes Ordinance (Cap 200) s 60(3) (Textbook [9-25])",
+            quoteText: "An offence committed under this section by destroying or damaging property by fire shall be charged as arson."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "The prosecutor argues that any 'ordinary, prudent adult' would have seen an obvious risk that the fire would spread to the building, even though you (aged 12) genuinely did not foresee that risk.",
+            question: "What is the central legal issue regarding the meaning of 'recklessly' in Hong Kong criminal law?",
+            options: [
+              "Whether recklessness is judged objectively (Caldwell test) or subjectively (Cunningham / R v G test).",
+              "Whether children under 14 are immune from arson.",
+              "Whether newspapers count as 'property' under CO s 59.",
+              "Whether the shop owner had fire insurance."
+            ],
+            correct: 0,
+            explanation: "The issue is whether recklessness requires subjective awareness of the risk by the defendant himself, or merely that the risk would have been obvious to a reasonable adult.",
+            quoteSource: "R v Stephenson [1979] 1 QB 695, per Geoffrey Lane LJ (Textbook [3-26])",
+            quoteText: "Does the word 'reckless' require that the defendant must be proved actually to have foreseen the risk of some damage resulting from his actions and nevertheless to have run the risk (the subjective test), or is it sufficient to prove that the risk of damage resulting would have been obvious to any reasonable person...?"
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "In R v G [2004] 1 AC 1034, the House of Lords overruled R v Caldwell [1982] AC 341 on facts virtually identical to yours (two boys aged 11 and 12 lighting newspapers under a wheelie-bin).",
+            question: "What is the test for subjective recklessness laid down in R v G?",
+            options: [
+              "The defendant fails to give any thought to an obvious risk.",
+              "The defendant is aware of a risk that a circumstance exists or a result will occur, and it is, in the circumstances known to him, unreasonable to take that risk.",
+              "The defendant acts with wicked or evil motive.",
+              "The defendant breaches a civil duty of care."
+            ],
+            correct: 1,
+            explanation: "Under R v G, recklessness requires subjective foresight/awareness of the risk by the defendant, combined with an unreasonable decision to take that risk.",
+            quoteSource: "R v G [2004] 1 AC 1034, per Lord Bingham (Textbook [3-45])",
+            quoteText: "It is neither moral nor just to convict a defendant (least of all a child) on the strength of what someone else would have apprehended if the defendant himself had no such apprehension."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "In Hong Kong, older cases like R v Chau Ming Cheong and R v Dung Shue Wah had followed Caldwell objective recklessness.",
+            question: "Which Hong Kong Court of Final Appeal judgment adopted R v G and overruled Caldwell in Hong Kong?",
+            options: [
+              "Sin Kam Wah v HKSAR (2005) 8 HKCFAR 192.",
+              "HKSAR v So Wai Lun (2006) 9 HKCFAR 530.",
+              "HKSAR v Chan Kam Shing (2016) 19 HKCFAR 640.",
+              "Woolmington v DPP [1935] AC 462."
+            ],
+            correct: 0,
+            explanation: "In Sin Kam Wah v HKSAR, Sir Anthony Mason NPJ expressly overruled R v Chau Ming Cheong and R v Dung Shue Wah, establishing subjective recklessness across Hong Kong criminal law.",
+            quoteSource: "Sin Kam Wah v HKSAR (2005) 8 HKCFAR 192, per Sir Anthony Mason NPJ (Textbook [3-50])",
+            quoteText: "Henceforth juries should be directed in terms of the subjective interpretation of recklessness upheld in R v G & Another [2004] 1 AC 1034... a defendant could not be regarded as culpable... if, due to his age or personal characteristics, he genuinely did not appreciate or foresee the risks involved in his actions."
+          }
+        ]
+      },
+      {
+        id: "ch4-strict-liability-clinic",
+        category: "fundamentals",
+        badge: "CHAPTER 4 â€¢ STRICT & ABSOLUTE LIABILITY",
+        title: "Mong Kok Dispensary & Unfit Drugs",
+        role: "You are a clinic doctor and clinic assistant in Mong Kok.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "At a private clinic in Mong Kok, you (the doctor) and your clinic assistant dispense bottles of cough medicine to patients. Unbeknownst to either of you, the supplier delivered a batch contaminated with industrial chemical solvent, rendering the drug unfit for human use. Both of you are summonsed under section 54(1) of the Public Health and Municipal Services Ordinance (Cap 132).",
+            question: "Notice that section 54(1) of Cap 132 does not contain words like 'knowingly' or 'intentionally'. What is the starting presumption in statutory construction?",
+            options: [
+              "All statutory offences are automatically absolute liability.",
+              "There is a common law presumption that mens rea is required unless displaced expressly or by necessary implication.",
+              "Only corporations can be prosecuted under Cap 132.",
+              "The defendant must prove innocence beyond reasonable doubt."
+            ],
+            correct: 1,
+            explanation: "Under Sweet v Parsley and Gammon (HK) Ltd v A-G, courts presume mens rea is required before a person is held guilty of a criminal offence, though this can be displaced for public safety/health statutes.",
+            quoteSource: "Gammon (Hong Kong) Ltd v A-G of Hong Kong [1985] AC 1, per Lord Scarman (Textbook [4-8])",
+            quoteText: "(1) there is a presumption of law that mens rea is required before a person can be held guilty of a criminal offence; (2) the presumption is particularly strong where the offence is 'truly criminal' in character; (3) the presumption applies to statutory offences, and can be displaced only if this is clearly or by necessary implication the effect of the statute..."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "Section 70(1) of Cap 132 provides a specific statutory defence: a defendant is acquitted if he proves the contravention was due to the act/default of another person AND that he used 'all due diligence' to ensure compliance.",
+            question: "What is the key legal issue when a statute displaces mens rea AND provides its own statutory 'due diligence' defence?",
+            options: [
+              "Whether the common law 'halfway house' defence of honest and reasonable belief is excluded in favour of the statutory defence (Alternative 4).",
+              "Whether the clinic is a public place under the Public Order Ordinance.",
+              "Whether the medicine was stolen under the Theft Ordinance.",
+              "Whether the doctor can plead provocation."
+            ],
+            correct: 0,
+            explanation: "When a statute provides a specific due diligence defence (like s 70(1)), the Court of Final Appeal must decide which of the five Hin Lin Yee / Kulemesin mens rea alternatives applies.",
+            quoteSource: "Hin Lin Yee v HKSAR (2010) 13 HKCFAR 142, per Ribeiro PJ (Textbook [4-30])",
+            quoteText: "In Hin Lin Yee, the fourth alternative was adopted on the ground that the statutory defences required something over and above an honest and reasonable belief. The fourth alternative presupposes that a statutory defence may displace the common law defence..."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "In Kulemesin v HKSAR (2013) 16 HKCFAR 195 (endangering safety at sea), the CFA restated the 5 Alternatives for statutory offences.",
+            question: "How do Alternative 2 and Alternative 3 differ in Kulemesin v HKSAR?",
+            options: [
+              "Alternative 2 places an evidential burden on D to raise honest and reasonable belief (which P must disprove beyond reasonable doubt); Alternative 3 places a persuasive burden on D on the balance of probabilities.",
+              "Alternative 2 is absolute liability; Alternative 3 requires direct intent.",
+              "Alternative 2 applies only to murder; Alternative 3 applies only to theft.",
+              "There is no difference between Alternative 2 and Alternative 3."
+            ],
+            correct: 0,
+            explanation: "For serious offences with heavy penalties (like Kulemesin), Alternative 2 (evidential burden only) avoids infringing the constitutional presumption of innocence; for regulatory offences, Alternative 3 (persuasive burden) or Alternative 4 (statutory defence) often applies.",
+            quoteSource: "Kulemesin v HKSAR (2013) 16 HKCFAR 195, at para 89 (Textbook [4-34])",
+            quoteText: "Where a serious offence carrying severe penalties is involved, a reverse onus may also be regarded as making excessive inroads into both the presumption of mens rea and the constitutionally protected presumption of innocence."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Apply the exact holding of Hin Lin Yee v HKSAR (2010) 13 HKCFAR 142 to both you (the clinic doctor) and your clinic assistant.",
+            question: "What was the outcome for the doctor and the assistant in Hin Lin Yee v HKSAR?",
+            options: [
+              "Both were acquitted under absolute liability.",
+              "The doctor's conviction was upheld (Alternative 4 applied, and he failed to prove due diligence under s 70(1)), while the assistant's appeal was allowed because she did not 'sell' the drug within the statutory meaning.",
+              "Both were sentenced to life imprisonment.",
+              "The statute was struck down as unconstitutional."
+            ],
+            correct: 1,
+            explanation: "In Hin Lin Yee, the CFA unanimously dismissed the doctor's appeal (applying Alternative 4 where s 70(1) due diligence displaced the common law halfway house) and allowed the clinic assistant's appeal by majority.",
+            quoteSource: "HKSAR v So Wai Lun [2005] 1 HKLRD 443, per Ma CJHC (Textbook [4-2])",
+            quoteText: "Strict liability means that the prosecution does not have to prove mens rea, whereas absolute liability means that it is not even open to the defence to prove that he did not have the necessary intention to commit the crime."
+          }
+        ]
+      },
+      {
+        id: "ch2-causation-hospital",
+        category: "fundamentals",
+        badge: "CHAPTER 2 â€¢ CAUSATION & NOVUS ACTUS",
+        title: "Kowloon Hospital & Chain of Causation",
+        role: "You are involved in a knife fight in Yau Ma Tei.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "During a street brawl in Yau Ma Tei, you stab a man in the chest, puncturing his lung. He is rushed to a hospital in Kowloon. At the hospital, doctors tell him he needs an urgent blood transfusion to survive. Because of his sincere religious beliefs as a Jehovah's Witness, he refuses the blood transfusion and dies the next morning.",
+            question: "First, is 'factual causation' ('but for' test) satisfied between your stab wound and the victim's death?",
+            options: [
+              "No, because the hospital doctors caused his death.",
+              "Yes: but for your stab wound, he would not have needed a blood transfusion or died when he did.",
+              "No, because R v White acquits anyone whose victim has a medical condition.",
+              "Only if you prevented the ambulance from arriving."
+            ],
+            correct: 1,
+            explanation: "Factual causation asks: 'But for the defendant's act, would the result have occurred when and how it did?' Contrast R v White [1910] 2 KB 124, where the mother died of a heart attack unrelated to the cyanide in her drink.",
+            quoteSource: "R v Hughes [2013] UKSC 56, per Lord Hughes & Lord Toulson (Textbook [2-60])",
+            quoteText: "The law has frequently to confront the distinction between 'cause' in the sense of a sine qua non without which the consequence would not have occurred, and 'cause' in the sense of something which was a legally effective cause of that consequence."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "You argue at trial that the victim's own free refusal of a life-saving blood transfusion was a novus actus interveniens (new intervening act) that broke the chain of causation.",
+            question: "Does a victim's refusal of medical treatment on religious grounds break the chain of causation?",
+            options: [
+              "Yes, because R v Kennedy (No 2) says all adult choices break causation.",
+              "No, because under the thin-skull rule you must take the victim as you find himâ€”including his religious beliefsâ€”and the stab wound remained an operating and substantial cause.",
+              "Yes, if the doctors warned him he would die without blood.",
+              "Only if the victim signed a waiver form."
+            ],
+            correct: 1,
+            explanation: "In R v Blaue [1975] 3 All ER 446, a Jehovah's Witness stabbed by the defendant refused a blood transfusion and died. The Court of Appeal held that the defendant must take the whole victim as he finds him, including his spiritual/religious beliefs.",
+            quoteSource: "Textbook Chapter 2: Actus Reus [2-82] (R v Blaue [1975] 3 All ER 446)",
+            quoteText: "Similarly, in R v Blaue, the defendant stabbed a woman who was a Jehovah's Witness. The woman refused to receive a blood transfusion when admitted to hospital and subsequently died... The defendant was convicted of manslaughter and his conviction was upheld on appeal."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Now consider an alternative hospital scenario: what if the victim accepted treatment, and a junior doctor negligently gave him a standard antibiotic that was slightly suboptimal, though the stab wound was still bleeding heavily?",
+            question: "When will negligent medical treatment break the chain of causation as a novus actus interveniens?",
+            options: [
+              "Whenever a doctor makes any mistake at all.",
+              "Only if the medical treatment is 'palpably wrong' and so independent of the defendant's act and potent in causing death that the original wound is merely part of the history.",
+              "Never, even if a doctor intentionally poisons the patient.",
+              "Whenever the patient stays in hospital for more than 7 days."
+            ],
+            correct: 1,
+            explanation: "Compare R v Smith [1959] 2 QB 35 (dropped twice and poor careâ€”wound still operating and substantial, chain unbroken) and R v Cheshire [1991] 3 All ER 670 with R v Jordan (1956) 40 Cr App R 152 (wound had almost healed, fatal allergic drug administeredâ€”palpably wrong, chain broken).",
+            quoteSource: "R v Smith [1959] 2 QB 35, per Lord Parker CJ (Textbook [2-67])",
+            quoteText: "It seems to the court that if at the time of death the original wound is still an operating cause and a substantial cause, then the death can properly be said to be the result of the wound, albeit that some other cause of death is also operating."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "In R v Cheshire [1991] 3 All ER 670 (applied in Hong Kong in R v Wong Tat-chuen [1997] HKLRD 433), the victim was shot and died two months later from negligent tracheotomy tube management after the bullet wounds had largely healed.",
+            question: "What was the legal outcome in R v Cheshire / R v Wong Tat-chuen?",
+            options: [
+              "Conviction upheld: even if negligent medical treatment is the immediate cause of death, it does not exclude liability unless so independent and potent as to render the accused's acts insignificant.",
+              "Conviction quashed because two months had passed.",
+              "Conviction quashed because tracheotomy is a surgical procedure.",
+              "Conviction reduced to common assault."
+            ],
+            correct: 0,
+            explanation: "In R v Cheshire, Beldam LJ established that negligent medical treatment only breaks causation when it is so independent of the defendant's acts and so potent in causing death that the defendant's contribution becomes insignificant.",
+            quoteSource: "R v Cheshire [1991] 3 All ER 670, per Beldam LJ (Textbook [2-68])",
+            quoteText: "Even though negligence in the treatment of the victim was the immediate cause of his death, the jury should not regard it as excluding the responsibility of the accused unless the negligent treatment was so independent of his acts, and in itself so potent in causing death, that they regard the contribution made by his acts as insignificant."
+          }
+        ]
+      },
+      {
+        id: "ch13-computer-use",
+        category: "property",
+        badge: "CHAPTER 13 â€¢ DISHONEST USE OF COMPUTER",
+        title: "Wan Chai Office & Smartphone Access",
+        role: "You are a teacher / office employee in Wan Chai.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "Working at an institution in Wan Chai, you use your own personal smartphone to photograph confidential exam/admission questions displayed on a projector screen during a staff briefing, and WhatsApp the photos from your own phone to a friend to help them prepare.",
+            question: "Can a smartphone qualify as a 'computer' under Hong Kong case law?",
+            options: [
+              "No, only desktop PCs with keyboards are computers.",
+              "Yes: in Secretary for Justice v Wong Ka Yip Ken [2013] 4 HKLRD 588, an Android smartphone was held to be a computer (though the CFA left the question open in Cheng Ka Yee).",
+              "Only if connected to a government server.",
+              "No, unless it runs Windows."
+            ],
+            correct: 1,
+            explanation: "Fung J in SJ v Wong Ka Yip Ken adopted the dictionary definition of a computer as an electronic device receiving data and performing programmed operations, covering smartphones. However, the CFA in Cheng Ka Yee focused on the meaning of 'obtains access'.",
+            quoteSource: "Secretary for Justice v Wong Ka Yip Ken [2013] 4 HKLRD 588, per Fung J (Textbook [13-14])",
+            quoteText: "...an electronic device, which is capable of receiving information (data) in a particular form and of performing a sequence of operations in accordance with a predetermined but variable set of procedural instructions (program) to produce a result..."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "You are prosecuted under section 161(1)(c) of the Crimes Ordinance (Cap 200) ('access to computer with criminal or dishonest intent') for using your own smartphone to take and send the photos.",
+            question: "What is the decisive legal issue regarding section 161 of the Crimes Ordinance?",
+            options: [
+              "Whether 'obtains access to a computer' in s 161 applies to a person using their own device, or requires accessing another person's computer without authority.",
+              "Whether WhatsApp is encrypted.",
+              "Whether the photos were blurred.",
+              "Whether exam questions are tangible property under Theft Ordinance s 5 (Oxford v Moss)."
+            ],
+            correct: 0,
+            explanation: "In Secretary for Justice v Cheng Ka Yee (2019) 22 HKCFAR 97, the Court of Final Appeal examined whether 'obtaining access' covers using one's own smartphone.",
+            quoteSource: "Crimes Ordinance (Cap 200) s 161(1) (Textbook [13-12])",
+            quoteText: "Any person who obtains access to a computer â€“ (a) with intent to commit an offence; (b) with a dishonest intent to deceive; (c) with a view to dishonest gain for himself or another; or (d) with a dishonest intent to cause loss to another... commits an offence..."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Contrast using your own smartphone with logging into a hospital or bank computer system without authorization to view patient/customer records (as in HKSAR v Tsun Shui Lun [1999] 3 HKLRD 215).",
+            question: "What constitutes 'gain' under section 161(1)(c) when someone accesses another's computer?",
+            options: [
+              "Only cash or bank transfers.",
+              "Gain is not confined to financial or proprietary benefits; merely obtaining information one did not previously have (even without copying it) is a 'gain'.",
+              "Only permanent physical property.",
+              "Only selling data on the dark web."
+            ],
+            correct: 1,
+            explanation: "Under HKSAR v Tsun Shui Lun and HKSAR v Yu Mei King, 'gain' in s 161 casts an open net and includes intangible benefits like viewing confidential medical or financial data one did not previously possess.",
+            quoteSource: "HKSAR v Tsun Shui Lun [1999] 3 HKLRD 215, per Chan CJHC (Textbook [13-22])",
+            quoteText: "First, it is not confined to financial or proprietary benefits, but is wide enough to cover intangible benefits. Second, it can be a transient as opposed to permanent benefit. Third, the keeping of what one has or the getting of what one has not is also regarded as a gain."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Apply Secretary for Justice v Cheng Ka Yee (2019) 22 HKCFAR 97 to your act of using your own personal smartphone in Wan Chai.",
+            question: "What was the Court of Final Appeal's ruling in Secretary for Justice v Cheng Ka Yee?",
+            options: [
+              "Conviction upheld because any dishonest use of your own phone violates s 161.",
+              "Acquittal on s 161: 'obtains access to a computer' does not apply to a person's use of their own device where no access is obtained to another person's computer.",
+              "Conviction substituted with theft under Oxford v Moss.",
+              "Conviction upheld only if the phone was an iPhone."
+            ],
+            correct: 1,
+            explanation: "The CFA held that 'obtain access' means gaining access to something to which one did not have access beforeâ€”thus s 161 does not cover using one's own smartphone without accessing another's computer.",
+            quoteSource: "Secretary for Justice v Cheng Ka Yee (2019) 22 HKCFAR 97, at paras 38â€“39 (Textbook [13-18])",
+            quoteText: "As a matter of language one always 'obtains' access to something to which one did not have access before... That overlap, however, merely emphasises the oddness of applying s 161 to the use by a person of their own computer."
+          }
+        ]
+      },
+      {
+        id: "ch8-theft-supermarket",
+        category: "property",
+        badge: "CHAPTER 8 â€¢ DISHONESTY OFFENCES (THEFT)",
+        title: "Tsim Sha Tsui Supermarket & Gift",
+        role: "You are a shopper and caregiver in Tsim Sha Tsui.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "Inside a supermarket in Tsim Sha Tsui, you take a tin of abalone off the shelf, peel off its HK$380 price label, and stick on a HK$45 price label from a tin of sardines. You walk to the cashier and pay HK$45, and the cashier hands you the receipt.",
+            question: "When did the actus reus of 'appropriation' under section 4(1) of the Theft Ordinance (Cap 210) occur?",
+            options: [
+              "Only after you walked out of the supermarket doors.",
+              "The moment you switched the price labels on the shelf, assuming one of the rights of the owner.",
+              "Never, because the cashier consented to take your HK$45.",
+              "Only if you ate the abalone inside the store."
+            ],
+            correct: 1,
+            explanation: "Under R v Morris [1984] AC 320 and R v Gomez [1993] AC 442, assuming ANY single right of the owner (such as switching price labels) is an appropriation, even if the cashier later consents to the sale.",
+            quoteSource: "Theft Ordinance (Cap 210) s 4(1) (Textbook [8-6])",
+            quoteText: "Any assumption by a person of the rights of an owner amounts to an appropriation and this includes where he has come by the property (innocently or not) without stealing it, any later assumption of a right to it by keeping or dealing with it as owner."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "In a second scenario, you befriend an elderly neighbour with limited mental capacity in Tsim Sha Tsui. You persuade him to withdraw HK$200,000 from his bank and hand it to you as a 'voluntary gift'. Under civil law, the gift transfer is valid.",
+            question: "Can receiving a valid gift under civil law still constitute 'appropriation' for theft?",
+            options: [
+              "No, a valid civil gift can never be theft.",
+              "Yes: under R v Hinks [2001] 2 AC 241, appropriation is a neutral act of assuming the owner's rights, regardless of whether the owner consented or the gift is valid in civil law.",
+              "Only if you used a gun or knife.",
+              "No, because cash in a bank is not property."
+            ],
+            correct: 1,
+            explanation: "In R v Hinks (endorsed in Hong Kong in HKSAR v Wong Cho Sum), the House of Lords held that acquiring title via a valid gift still amounts to appropriation; whether it is theft depends on dishonesty and intent to permanently deprive.",
+            quoteSource: "R v Hinks [2001] 2 AC 241, per Lord Steyn (Textbook [8-12])",
+            quoteText: "If the law is restated by adopting a narrower definition of appropriation, the outcome is likely to place beyond the reach of the criminal law dishonest persons who should be found guilty of theft... In practice the mental requirements of theft are an adequate protection against injustice."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Section 3(1) of the Theft Ordinance (Cap 210) lists three situations where an appropriation is NOT regarded as dishonest (belief in legal right, belief in owner's consent, belief owner cannot be found). Otherwise, the court applies the common law test of dishonesty.",
+            question: "What is the two-limb test for dishonesty under R v Ghosh (affirmed in Hong Kong in Mo Yuk Ping v HKSAR)?",
+            options: [
+              "(1) Was the conduct dishonest by the ordinary standards of reasonable and honest people? (2) Must the defendant himself have realised that what he was doing was dishonest by those standards?",
+              "Did the defendant make a financial profit?",
+              "Did the defendant breach a written contract?",
+              "Was the victim under 16 years old?"
+            ],
+            correct: 0,
+            explanation: "While the UK Supreme Court in Ivey v Genting Casinos [2018] AC 391 removed the second subjective limb, Hong Kong's Court of Final Appeal affirmed the two-limb Ghosh test in Mo Yuk Ping v HKSAR (2007) 10 HKCFAR 386.",
+            quoteSource: "Specimen Direction 33 / R v Ghosh [1982] QB 1053 (Textbook [8-33])",
+            quoteText: "1. Was what the defendant did... dishonest by the ordinary standards of reasonable and honest people? ... 2. Must the defendant himself have realised that what he was doing... would be regarded as dishonest by those standards?"
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Suppose you take HK$5,000 cash from your employer's safe in Tsim Sha Tsui, genuinely intending to repay HK$5,000 from your salary next week.",
+            question: "Do you have the 'intention of permanently depriving' under section 2(1) and section 7 of the Theft Ordinance?",
+            options: [
+              "No, because you intend to return equivalent value next week.",
+              "Yes: under R v Velumyl [1989] Crim LR 299, intending to return different banknotes/coins of equivalent value is still an intent to permanently deprive the owner of those specific notes taken.",
+              "No, because money is intangible property.",
+              "Only if the safe was locked."
+            ],
+            correct: 1,
+            explanation: "In R v Velumyl (and R v Cockburn), taking specific banknotes/coins with intent to spend them and replace them later with equivalent money still satisfies intent to permanently deprive (though it may bear on Ghosh dishonesty).",
+            quoteSource: "R v Velumyl [1989] Crim LR 299, per Simon Brown J (Textbook [8-59])",
+            quoteText: "Did he intend permanently to deprive the owner of it? Again, yes. He had no intention of returning the objects he had taken. His intention -- at the best -- was to return objects of equivalent value."
+          }
+        ]
+      },
+      {
+        id: "ch14-intoxication-lkf",
+        category: "complex",
+        badge: "CHAPTER 14 â€¢ DEFENCES (INTOXICATION & MISTAKE)",
+        title: "Lan Kwai Fong Night Out & Intoxication",
+        role: "You are a patron drinking heavily in Lan Kwai Fong, Central.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "After voluntarily drinking 12 shots of vodka in Lan Kwai Fong, you become severely intoxicated. While stumbling down Wyndham Street, your friend taps your shoulder to offer you a taxi ride home. In a drunken delusion, you mistake your friend for an armed mugger and punch him in the jaw, fracturing his cheekbone (inflicting GBH under OAPO s 19).",
+            question: "Can you rely on your drunken mistake to plead self-defence?",
+            options: [
+              "Yes, because R v Williams (Gladstone) allows any honest mistake in self-defence, even if induced by alcohol.",
+              "No: under R v O'Grady and R v Hatton, a defendant cannot rely on a mistaken belief in self-defence caused by voluntary intoxication.",
+              "Yes, because OAPO s 19 is a specific intent crime.",
+              "Only if you drank beer instead of vodka."
+            ],
+            correct: 1,
+            explanation: "While an honest sober mistake supports self-defence (R v Williams (Gladstone)), R v O'Grady and R v Hatton establish that a mistaken belief induced by voluntary intoxication fails for both basic and specific intent offences.",
+            quoteSource: "R v O'Grady [1987] QB 995, per Lord Lane CJ (Textbook [14-115])",
+            quoteText: "...where the jury are satisfied that the defendant was mistaken in his belief that any force or the force which he in fact used was necessary to defend himself and are further satisfied that the mistake was caused by voluntarily induced intoxication, the defence must fail."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "Next, consider if you are charged with (a) Murder (specific intent) versus (b) Unlawful and Dangerous Act Manslaughter or Common Assault (basic intent) after a drunken fight.",
+            question: "How does voluntary intoxication operate differently between specific intent and basic intent crimes under DPP v Majewski?",
+            options: [
+              "Voluntary intoxication is a complete defence to all crimes.",
+              "Voluntary intoxication may negate mens rea for specific intent crimes (if D was so drunk he failed to form the intent), but for basic intent crimes getting voluntarily drunk supplies the recklessness.",
+              "Voluntary intoxication applies only to basic intent crimes.",
+              "Voluntary intoxication reduces every offence to a fine."
+            ],
+            correct: 1,
+            explanation: "In DPP v Majewski [1977] AC 443, the House of Lords drew the fundamental divide: voluntary intoxication is no defence to basic intent crimes (assault, manslaughter, s 19 GBH), whereas it is relevant to whether D actually formed specific intent (murder, s 17 GBH with intent, theft).",
+            quoteSource: "DPP v Majewski [1977] AC 443, per Lord Elwyn-Jones (Textbook [14-88])",
+            quoteText: "His course of conduct in reducing himself by drugs and drink to that condition in my view supplies the evidence of mens rea, of guilty mind certainly sufficient for crimes of basic intent."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "What if you decided in advance while completely sober to kill a rival, and then drank heavily in Lan Kwai Fong specifically to give yourself 'Dutch courage' to carry out the killing?",
+            question: "What is the 'Dutch courage' rule under A-G for Northern Ireland v Gallagher?",
+            options: [
+              "You are guilty only of manslaughter because you were drunk at the moment of killing.",
+              "You cannot rely on voluntary intoxication to negate specific intent if you formed the intent to kill while sober and drank to give yourself courage.",
+              "You are entitled to the defence of automatism.",
+              "You are entitled to the partial defence of provocation."
+            ],
+            correct: 1,
+            explanation: "In A-G for Northern Ireland v Gallagher [1963] AC 349, Lord Denning held that forming the intent while sober and getting drunk for 'Dutch courage' provides no defence to murder.",
+            quoteSource: "A-G for Northern Ireland v Gallagher [1963] AC 349, per Lord Denning (Textbook [14-93])",
+            quoteText: "If a man, whilst sane and sober, forms an intention to kill and makes preparation for it, knowing it is a wrong thing to do, and then gets himself drunk so as to give himself Dutch courage to do the killing... he cannot rely on this self-induced drunkenness as a defence..."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Finally, suppose a stranger secretly spikes your soft drink with a potent drug (involuntary intoxication), lowering your inhibitions, but you still form the conscious intent to assault someone.",
+            question: "Under R v Kingston [1995] 2 AC 355, does involuntary intoxication provide a defence if you still possessed the requisite mens rea?",
+            options: [
+              "Yes, spiked drinks always result in an automatic acquittal.",
+              "No: 'a drugged intent is still an intent'â€”involuntary intoxication only assists if it prevented you from forming the necessary mens rea.",
+              "Yes, under the M'Naghten Rules.",
+              "Only in the District Court."
+            ],
+            correct: 1,
+            explanation: "In R v Kingston, the House of Lords ruled that involuntary disinhibition is not a defence if the prosecution proves the defendant still formed the required mens rea at the time of the act.",
+            quoteSource: "Textbook Chapter 14: Defences [14-95] (R v Kingston [1995] 2 AC 355)",
+            quoteText: "In R v Kingston... It was held that if the defendant had the requisite mens rea prior to the involuntary intoxication, then the defence of involuntary intoxication would not be open to him. The absence of moral fault by a defendant did not suffice per se to negate the necessary mental element..."
+          }
+        ]
+      },
+      {
+        id: "ch1-procedure-magistracy",
+        category: "complex",
+        badge: "CHAPTER 1 â€¢ CRIMINAL PROCEDURE & SENTENCING",
+        title: "Eastern Magistracy Court 7 Committal",
+        role: "You are an accused person appearing at Eastern Magistrates' Court.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "You are arrested by the Hong Kong Police Force and charged with robbery (an indictable offence triable only in the Court of First Instance or District Court). All criminal cases in Hong Kong begin in the Magistracy, which acts as a 'triage court'. You appear in Court 7 of the Eastern Magistracy for committal proceedings.",
+            question: "Who bears the legal burden of proving guilt in a Hong Kong criminal trial, and to what standard?",
+            options: [
+              "The defendant must prove innocence on the balance of probabilities.",
+              "The prosecution bears the legal burden of proving guilt beyond reasonable doubt ('the golden thread').",
+              "The Magistrate decides by a 51% probability.",
+              "The jury draws an adverse inference if the defendant remains silent."
+            ],
+            correct: 1,
+            explanation: "Under Woolmington v DPP [1935] AC 462 and Basic Law Art 86, the prosecution must prove guilt beyond reasonable doubt. Unlike England, Hong Kong does NOT allow adverse inferences from a defendant's silence at trial.",
+            quoteSource: "Woolmington v DPP [1935] AC 462, per Viscount Sankey (Textbook [1-18])",
+            quoteText: "Throughout the web of the English Criminal Law one golden thread is always to be seen, that is the duty of the prosecution to prove the prisoner's guilt subject to what I have already said as to the defence of insanity and subject also to any statutory exception."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "You ask your lawyer whether you can demand a jury trial in the Court of First Instance instead of having the Secretary for Justice transfer your case to the District Court (where a single District Judge sits without a jury and has a 7-year sentencing cap).",
+            question: "Does an accused person in Hong Kong have a constitutional right to elect a jury trial?",
+            options: [
+              "Yes, any defendant facing over 2 years' imprisonment can demand a jury.",
+              "No: under Chiang Lily v Secretary for Justice (2010) 13 HKCFAR 208, the Secretary for Justice has the sole prerogative discretion to select the trial venue.",
+              "Yes, under section 88 of the Magistrates Ordinance.",
+              "Only if the Permanent Magistrate consents."
+            ],
+            correct: 1,
+            explanation: "Unlike England and Wales, Hong Kong defendants cannot elect their trial venue; the SJ exercises independent prosecutorial discretion under Basic Law Art 63 to place cases in the Magistracy, District Court, or CFI.",
+            quoteSource: "Textbook Chapter 1: The Criminal Justice System [1-76] (Chiang Lily v SJ (2010) 13 HKCFAR 208)",
+            quoteText: "In Chiang Lily v Secretary for Justice, the court made it clear that... the SJ has the sole discretion to consider whether to place a case in the District Court (where the defendant is to be tried by a single judge) or in the Court of First Instance (where the defendant would have a jury trial)."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Your case is committed to the Court of First Instance under the Magistrates Ordinance (Cap 227). You are considering pleading guilty to obtain the full one-third sentencing discount.",
+            question: "Under HKSAR v Ngo Van Nam [2016] 5 HKLRD 1, when must a defendant plead guilty to receive the full one-third sentencing discount?",
+            options: [
+              "At any time before the jury retires.",
+              "At the earliest opportunity: before the Magistrate on committal (for CFI cases) or on Plea Day before the District Judge (for District Court cases).",
+              "Only after all prosecution witnesses have testified.",
+              "Sentencing discounts were abolished in Hong Kong."
+            ],
+            correct: 1,
+            explanation: "Following HKSAR v Ngo Van Nam, the full 1/3 discount is preserved only if the defendant indicates/enters a guilty plea at the committal stage (CFI) or Plea Day (District Court); later pleas receive a sliding-scale reduced discount.",
+            quoteSource: "Textbook Chapter 1: The Criminal Justice System [1-82] (HKSAR v Ngo Van Nam [2016] 5 HKLRD 1)",
+            quoteText: "After a recent change in sentencing policy imposed by HKSAR v Ngo Van Nam, a defendant is only entitled to a full one-third sentencing discount if he pleaded guilty before a Magistrate on committal. Thereafter, the discount offered to a defendant for his guilty plea would be reduced."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Suppose instead you were convicted of a minor summary offence and received a fine of HK$5,000 (no imprisonment over 3 months, no fine over HK$10,000), and you commit no further offences for 3 years.",
+            question: "What protection does the Rehabilitation of Offenders Ordinance (Cap 297) s 2 provide after 3 years?",
+            options: [
+              "Your criminal record is physically deleted from police computers.",
+              "Your conviction becomes 'spent', allowing you to lawfully refuse to disclose it in most employment contexts (subject to statutory exceptions like admission as a barrister/solicitor under s 4).",
+              "You receive a full pardon from the Chief Executive.",
+              "It applies even if you were sentenced to 5 years' imprisonment."
+            ],
+            correct: 1,
+            explanation: "Under ROO Cap 297 s 2, first-time convictions resulting in <=3 months' imprisonment or <=HK$10,000 fine become spent after 3 crime-free years, though exceptions exist (see Re A (admission as barrister) [2018] 2 HKLRD 1245).",
+            quoteSource: "Rehabilitation of Offenders Ordinance (Cap 297) s 2(1) (Textbook [1-166])",
+            quoteText: "...any question asked of that individual or any other person relating to, or any obligation imposed on that individual or any other person to disclose, that individual's previous convictions... shall be treated as not referring to that conviction..."
+          }
+        ]
+      },
+      {
+        id: "ch12-public-order",
+        category: "property",
+        badge: "CHAPTER 12 â€¢ PUBLIC ORDER OFFENCES",
+        title: "Admiralty Gathering & Public Order",
+        role: "You are attending a crowded public gathering in Admiralty.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "An initially peaceful assembly of 50 people in Admiralty becomes tense. Four individuals in the front row suddenly start shaking metal barriers, hurling insults at security guards, and charging a police cordon, causing bystanders and guards to fear an imminent violent clash. You are standing 20 metres away quietly holding a placard and do not join the barrier-shaking.",
+            question: "Under The Queen v To Kwan Hang [1995] 1 HKCLR 251, does the entire assembly of 50 people automatically become an 'unlawful assembly'?",
+            options: [
+              "Yes, everyone present at the gathering is automatically guilty.",
+              "No: only the 3 or more persons who conduct themselves in the disorderly, intimidating, insulting or provocative manner become an unlawful assembly.",
+              "No, because at least 100 people are needed for an unlawful assembly.",
+              "Yes, because the original assembly was in a public place."
+            ],
+            correct: 1,
+            explanation: "Under POO Cap 245 s 18(1), when 3 or more persons assembled together conduct themselves in the prescribed manner, only those participating in that conduct form the unlawful assembly.",
+            quoteSource: "The Queen v To Kwan Hang [1995] 1 HKCLR 251, per MacDougall VP (Textbook [12-7])",
+            quoteText: "...where three or more persons conduct themselves in the prescribed manner, it is they, not other members of their group who do not so conduct themselves, who become an unlawful assembly."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "The four individuals who charged the cordon argue that no bystanders actually testified that they felt scared, and that only uniformed police officers and Legislative Council security guards were nearby.",
+            question: "Must the prosecution call an individual bystander to prove subjective panic under POO s 18?",
+            options: [
+              "Yes, at least one civilian witness must testify they were terrified.",
+              "No: the test is objectiveâ€”whether the circumstances would reasonably cause an ordinary person (including trained police or security personnel) to apprehend a breach of the peace.",
+              "No, because police officers are never counted as 'any person'.",
+              "Yes, actual physical injury must occur first."
+            ],
+            correct: 1,
+            explanation: "In Secretary for Justice v Leung Kwok Wah and HKSAR v Wong Yeung Tat, the courts held that 'fear' means apprehension of an imminent breach of the peace assessed objectively, and trained police/security officers count as 'any person'.",
+            quoteSource: "Secretary for Justice v Leung Kwok Wah [2012] 5 HKLRD 556, per Lam JA (Textbook [12-22])",
+            quoteText: "It must be emphasised that s. 18 is very much a preventive measure. There is no need for a breach of the peace to have occurred. It is sufficient that a person present at the scene reasonably fears that it would occur if no action is taken..."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Suppose one of the four individuals picks up a brick and throws it at a police shield, actually committing a breach of the peace. Look at section 19 of the Public Order Ordinance (Cap 245).",
+            question: "What elevates an unlawful assembly under s 18 into a 'riot' under section 19 of the POO?",
+            options: [
+              "The presence of more than 10 people.",
+              "When any person taking part in an unlawful assembly commits a breach of the peace (unlawfully resorting to violence or threatening violence causing harm/damage).",
+              "Carrying a mobile phone.",
+              "Shouting political slogans without moving."
+            ],
+            correct: 1,
+            explanation: "Under POO s 19(1), once any person taking part in an unlawful assembly commits a breach of the peace, the assembly becomes a riot (punishable by up to 10 years' imprisonment on indictment).",
+            quoteSource: "Public Order Ordinance (Cap 245) s 19(1) (Textbook [12-33])",
+            quoteText: "When any person taking part in an assembly which is an unlawful assembly by virtue of section 18(1) commits a breach of the peace, the assembly is a riot and the persons assembled are riotously assembled."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Another participant is stopped in a public place carrying a heavy metal spanner wrapped in tape. He claims he carries it every day because he was attacked 4 years ago in Tsim Sha Tsui.",
+            question: "Under POO s 33 and Wong Christopher Milton v HKSAR (2006) 9 HKCFAR 295, is fear of a past attack 4 years ago a 'reasonable excuse'?",
+            options: [
+              "Yes, anyone previously attacked may carry a weapon permanently.",
+              "No: to rely on self-defence as a reasonable excuse under s 33, the defendant must genuinely and reasonably anticipate an imminent attack, not a general or historical threat.",
+              "Yes, because a spanner is never an offensive weapon.",
+              "Yes, if he keeps it inside his backpack."
+            ],
+            correct: 1,
+            explanation: "In Wong Christopher Milton v HKSAR (applying Evans v Hughes), the CFA held that POO s 33 does not permit permanent carriage of a weapon due to enduring/past fears; there must be a well-founded fear of an imminent attack.",
+            quoteSource: "Evans v Hughes [1972] 3 All ER 412, per Widgery CJ (Textbook [12-58])",
+            quoteText: "...it may be a reasonable excuse for the carrying of an offensive weapon that the carrier is in anticipation of imminent attack and is carrying it for his own personal defence, but... this Act never intended to sanction the permanent or constant carriage of an offensive weapon..."
+          }
+        ]
+      },
+      {
+        id: "ch5-provocation-diminished",
+        category: "person",
+        badge: "CHAPTER 5 â€¢ PARTIAL DEFENCES TO MURDER",
+        title: "Sha Tin Domestic Dispute & Partial Defences",
+        role: "You are charged with murder after a domestic altercation in Sha Tin.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "In your flat in Sha Tin, after months of constant verbal humiliation, your partner taunts you about a physical disability and threatens to ruin your life. You suddenly grab a kitchen knife and launch a frenzied attack, inflicting 55 stab wounds and killing your partner. You are charged with murder under OAPO s 2 (mandatory life imprisonment).",
+            question: "What is the legal effect if you successfully raise the partial defence of Provocation under section 4 of the Homicide Ordinance (Cap 339)?",
+            options: [
+              "Complete acquittal and immediate release.",
+              "Reduction of conviction from Murder (mandatory life) to Manslaughter (discretionary sentence), with the burden on the prosecution to disprove provocation beyond reasonable doubt.",
+              "Reduction to Common Assault under OAPO s 40.",
+              "Mandatory 25 years' imprisonment."
+            ],
+            correct: 1,
+            explanation: "Provocation and diminished responsibility are partial defences to murder only: they reduce murder to voluntary manslaughter, giving the sentencing judge discretion.",
+            quoteSource: "Homicide Ordinance (Cap 339) s 4 (Textbook [5-30])",
+            quoteText: "Where on a charge of murder there is evidence on which the jury can find that the person charged was provoked (whether by things done or by things said or by both together) to lose his self-control, the question whether the provocation was enough to make a reasonable man do as he did shall be left to be determined by the jury..."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "At trial, the prosecutor argues to the jury: 'Even if an ordinary person lost self-control, an ordinary person would never stab someone 55 times in a frenzied attack!'",
+            question: "Under HKSAR v Liang Yaoqiang (2017) 20 HKCFAR 1, what does 'do as he did' in section 4 of the Homicide Ordinance mean?",
+            options: [
+              "Inflict the exact same number of 55 stab wounds with the exact same weapon.",
+              "Killing simpliciter (losing self-control and killing with intent to kill or cause GBH)â€”not the exact physical manner or ferocity of a frenzied attack.",
+              "Walking away from the flat peacefully.",
+              "Calling an ambulance immediately."
+            ],
+            correct: 1,
+            explanation: "In HKSAR v Liang Yaoqiang (and HKSAR v Tam Ho Nam (No 2)), the CFA held that 'do as he did' means forming the intent to kill or cause GBH and killing; the jury must be warned not to reject provocation merely because an ordinary person wouldn't inflict 55 or 213 wounds.",
+            quoteSource: "HKSAR v Liang Yaoqiang (2017) 20 HKCFAR 1, per Fok PJ (Textbook [5-62])",
+            quoteText: "It is sufficient were you to find that the provocation which was presented would or might cause an ordinary person, placed in the same situation as the defendant, to lose self-control and cause [the victim's] death with the intention of doing so or at least with an intention to cause really serious bodily harm."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Now consider the second partial defence: Diminished Responsibility under section 3 of the Homicide Ordinance (Cap 339), where psychiatric experts testify you suffered from severe clinical depression.",
+            question: "Who bears the burden of proving Diminished Responsibility under HO s 3(2), and to what standard?",
+            options: [
+              "The prosecution must disprove it beyond reasonable doubt.",
+              "The defence bears the legal (persuasive) burden of proving diminished responsibility on the balance of probabilities.",
+              "The trial judge decides without medical evidence.",
+              "Voluntary drunkenness alone proves diminished responsibility."
+            ],
+            correct: 1,
+            explanation: "Unlike provocation (where D bears an evidential burden and P must disprove beyond reasonable doubt), under HO s 3(2) the defence must prove diminished responsibility on the balance of probabilities.",
+            quoteSource: "Homicide Ordinance (Cap 339) s 3(1)â€“(2) (Textbook [5-74])",
+            quoteText: "(1) Where a person kills or is a party to the killing of another, he shall not be convicted of murder if he was suffering from such abnormality of mind... as substantially impaired his mental responsibility... (2) On a charge of murder, it shall be for the defence to prove that the person charged is by virtue of this section not liable to be convicted of murder."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Suppose you were also voluntarily drunk at the time of the killing, alongside your underlying clinical depression.",
+            question: "Under R v Dietschmann [2003] 1 AC 1209 and R v Byrne [1960] 2 QB 396, how should the jury approach diminished responsibility when both drink and an abnormality of mind are present?",
+            options: [
+              "Any alcohol consumption automatically disqualifies the defendant from diminished responsibility.",
+              "The jury asks whether, despite the disinhibiting effect of the drink, the abnormality of mind arising from a recognised cause nevertheless substantially impaired D's mental responsibility.",
+              "Alcohol counts as an 'inherent cause' on its own.",
+              "The defendant is entitled to a complete acquittal."
+            ],
+            correct: 1,
+            explanation: "Under R v Dietschmann, the jury disregards the effect of the drink and asks whether the underlying abnormality of mind substantially impaired mental responsibility (meaning more than trivial, less than total: R v Lloyd).",
+            quoteSource: "R v Dietschmann [2003] 1 AC 1209, per Lord Hutton (Textbook [14-111])",
+            quoteText: "Therefore, the task for the jury is to decide whether, despite the disinhibiting effect of the drink on the defendant's mind, the abnormality of mind arising from a cause specified in subsection 2(1) nevertheless substantially impaired his mental responsibility for his fatal acts."
+          }
+        ]
+      },
+      {
+        id: "ch14-duress-coercion",
+        category: "complex",
+        badge: "CHAPTER 14 â€¢ DURESS BY THREATS & CIRCUMSTANCES",
+        title: "Kwai Chung Container Terminal & Duress",
+        role: "You are a delivery van driver in Kwai Chung.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "While loading boxes in Kwai Chung, a triad member points a pistol at your head and threatens: 'Drive this box of heroin to the pier right now, or I will shoot you and your wife!' Terrified, you drive the van toward the pier but are stopped at a police roadblock.",
+            question: "To raise the defence of Duress by Threats, what type of threat is required under R v Hasan [2005] 2 AC 467?",
+            options: [
+              "Any threat to damage your van or ruin your reputation.",
+              "An imminent threat of death or serious physical injury directed against you, your immediate family, or someone you are reasonably responsible for.",
+              "A threat of false imprisonment or financial bankruptcy.",
+              "Any subjective fear, even if completely unreasonable."
+            ],
+            correct: 1,
+            explanation: "Lord Bingham in R v Hasan confirmed that duress requires a threat of death or serious physical injury (not property damage, psychological harm, or false imprisonment: R v Dao) to D or someone close to D.",
+            quoteSource: "R v Hasan [2005] 2 AC 467, per Lord Bingham (Textbook [14-8])",
+            quoteText: "(1) Duress does not afford a defence to charges of murder... (2) To found a plea of duress the threat relied on must be to cause death or serious injury... (3) The threat must be directed against the defendant or his immediate family or someone close to him..."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "Suppose the triad gunman left the scene after issuing the threat, and you passed right outside Kwai Chung Police Station on your way to the pier, with your mobile phone in your pocket, yet you did not stop or call 999.",
+            question: "What limitation defeats your defence of duress if you passed a police station safely without seeking help?",
+            options: [
+              "Failure to take a reasonable opportunity to escape or seek police protection to render the threat ineffective (R v Hudson; HKSAR v Lam Yung Yung).",
+              "The single transaction rule.",
+              "Transferred malice.",
+              "The thin-skull rule."
+            ],
+            correct: 0,
+            explanation: "Under R v Hudson and HKSAR v Lam Yung Yung [2010] 2 HKLRD 384, duress fails if a sober person of reasonable firmness in D's situation had a safe, reasonable opportunity to escape or seek police help.",
+            quoteSource: "HKSAR v Lam Yung Yung [2010] 2 HKLRD 384 (Textbook [14-22])",
+            quoteText: "In that case, the defendant was charged with conspiracy to defraud. It was held that she had ample opportunity to seek help from her family, friends or even the police and therefore the threat was not unavoidable..."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "What if you had voluntarily joined that triad gang six months earlier knowing they used violence to enforce drug deliveries?",
+            question: "Under R v Hasan [2005] 2 AC 467 (and R v Sharp), how is 'voluntary association' assessed?",
+            options: [
+              "Subjectively: only if you actually foresaw they would force you to smuggle heroin.",
+              "Objectively: if you voluntarily associated with known criminals where you foresaw OR ought reasonably to have foreseen the risk of compulsion by threats of violence.",
+              "Voluntary association never bars duress.",
+              "Only if you signed a gang membership oath."
+            ],
+            correct: 1,
+            explanation: "Lord Bingham in R v Hasan held that an objective test applies: if D voluntarily associates with criminals and ought reasonably to have foreseen the risk of violent compulsion, duress is unavailable.",
+            quoteSource: "R v Hasan [2005] 2 AC 467, per Lord Bingham (Textbook [14-26])",
+            quoteText: "If a person voluntarily becomes or remains associated with others engaged in criminal activity in a situation where he knows or ought reasonably to know that he may be the subject of compulsion by them or their associates, he cannot rely on the defence of duress..."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "Finally, suppose the triad gunman ordered you to shoot and kill an innocent rival instead of transporting drugs.",
+            question: "Is duress ever available as a defence to murder or attempted murder in Hong Kong?",
+            options: [
+              "Yes, if the threat to your own life was immediate.",
+              "No: under R v Howe [1987] AC 417 and R v Gotts [1992] 2 AC 412, duress is never a defence to murder or attempted murder.",
+              "Yes, it reduces murder to manslaughter.",
+              "Only for defendants under 18 years old (R v Wilson)."
+            ],
+            correct: 1,
+            explanation: "Duress is strictly excluded as a defence to murder (R v Howe) and attempted murder (R v Gotts), even for a 13-year-old threatened by his own father (R v Wilson).",
+            quoteSource: "R v Wilson (2007) 2 Cr App R 31, per Lord Phillips CJ (Textbook [14-6])",
+            quoteText: "...the rule that duress provides no defence to a charge of murder applies however susceptible the defendant may be to the duress, absent always any question of diminished responsibility, and applies whether the defendant is a principal in the first or the second degree."
+          }
+        ]
+      },
+      {
+        id: "ch11-road-traffic",
+        category: "property",
+        badge: "CHAPTER 11 â€¢ ROAD TRAFFIC OFFENCES",
+        title: "Tolo Highway & Dangerous vs Careless Driving",
+        role: "You are driving a private car on Tolo Highway in the New Territories.",
+        steps: [
+          {
+            stepType: "STEP 1: DAILY LIFE SITUATION & KEY FACTS",
+            story: "You are a highly trained Grade-1 advanced driving instructor. On a busy afternoon on Tolo Highway, you drive at 150 km/h (far above the 100 km/h limit), weaving across double white lines without losing control, because you believe your superior driving skills prevent any danger to others.",
+            question: "Under section 37(4) of the Road Traffic Ordinance (Cap 374) and R v Bannister [2010] 2 All ER 841, can you rely on your special driving skills to argue your driving was not 'dangerous'?",
+            options: [
+              "Yes, special driving skills lower the standard of danger.",
+              "No: the test is purely objectiveâ€”whether the driving falls far below what would be expected of a competent and careful driver, and it would be obvious to such a driver that it is dangerous.",
+              "Yes, as long as no collision actually occurred.",
+              "Only if you were driving an unmarked car."
+            ],
+            correct: 1,
+            explanation: "In R v Bannister (overruling the second Milton decision), the Court of Appeal held that taking into account a driver's special skills would rewrite the statutory objective standard of the 'competent and careful driver'.",
+            quoteSource: "Road Traffic Ordinance (Cap 374) s 37(4) (Textbook [11-2])",
+            quoteText: "A person is to be regarded as driving dangerously within the meaning of subsection (1) if â€“ (a) the way he drives falls far below what would be expected of a competent and careful driver; and (b) it would be obvious to a competent and careful driver that driving in that way would be dangerous."
+          },
+          {
+            stepType: "STEP 2: LEGAL ISSUE IDENTIFICATION",
+            story: "Contrast that with a second incident: approaching a familiar junction in Tai Po, you experience a 2-second momentary lapse of attention while adjusting your radio and rear-end a stopped taxi at low speed.",
+            question: "How do Hong Kong courts distinguish 'dangerous driving' (RTO s 37) from 'careless driving' (RTO s 38)?",
+            options: [
+              "Dangerous driving requires driving falling 'far below' the competent and careful driver standard, whereas a momentary lapse of attention ('without due care and attention') amounts to careless driving.",
+              "Any collision is automatically dangerous driving.",
+              "Careless driving requires proof of subjective intent to crash.",
+              "There is no legal difference between s 37 and s 38."
+            ],
+            correct: 0,
+            explanation: "In HKSAR v Lee Mechian [2006] HKCU 1204 and HKSAR v Fan Siu Tong [2014] 4 HKLRD 814, Hong Kong courts held that a momentary lapse of attention constitutes careless driving under s 38 rather than dangerous driving under s 37.",
+            quoteSource: "HKSAR v Lee Mechian [2006] HKCU 1204, per DHCJ Derek Pang (Textbook [11-20])",
+            quoteText: "However tragic the result, a driver guilty of a momentary lapse of attention can only be guilty of careless driving."
+          },
+          {
+            stepType: "STEP 3: APPLICABLE LEGISLATION & RULE",
+            story: "Suppose a driver with known severe epilepsy or diabetes drives against medical advice, suffers a sudden hypoglycaemic/epileptic blackout at the wheel, and causes a fatal crash.",
+            question: "Can the driver escape liability for causing death by dangerous driving (RTO s 36) by claiming 'automatism' during the blackout?",
+            options: [
+              "Yes, because he was unconscious at the moment of impact.",
+              "No: under R v Marison [1996] Crim LR 909 and RTO s 36(7)(c), driving with prior knowledge of a physical condition likely to cause sudden incapacity is itself dangerous driving.",
+              "Yes, under the M'Naghten Rules.",
+              "Only if he wore a seatbelt."
+            ],
+            correct: 1,
+            explanation: "Under RTO s 36(7)(c) and R v Marison (and HKSAR v Leung Wai-kong [2018] HKDC 1315), the court considers circumstances (including physical condition) within the accused's knowledge when assessing dangerous driving.",
+            quoteSource: "Road Traffic Ordinance (Cap 374) s 36(7)(c) (Textbook [11-2])",
+            quoteText: "...regard shall be had to all the circumstances of the case including â€“ ... (c) the circumstances (including the physical condition of the accused) of which the accused could be expected to be aware and any circumstances (including the physical condition of the accused) shown to have been within the knowledge of the accused."
+          },
+          {
+            stepType: "STEP 4: PRECEDENT APPLICATION & OUTCOME",
+            story: "A trial judge acquits a defendant of 'causing death by dangerous driving' (RTO s 36) because causation of death was not proven beyond reasonable doubt, and stops the case without considering any lesser offences.",
+            question: "Under Secretary for Justice v Wong Chun Wai (CACC 238/2016) and RTO s 36(9)â€“(10), what must the trial court do?",
+            options: [
+              "Acquit the defendant completely.",
+              "Consider statutory alternative convictions, namely dangerous driving (s 37) or careless driving (s 38).",
+              "Convict the defendant of murder.",
+              "Refer the case to the Small Claims Tribunal."
+            ],
+            correct: 1,
+            explanation: "In SJ v Wong Chun Wai, the Court of Appeal held it is an error of law for a trial judge to acquit on s 36 without considering the statutory alternatives of dangerous driving (s 37) and careless driving (s 38) provided in s 36(9)â€“(10).",
+            quoteSource: "Textbook Chapter 11: Road Traffic Offences [11-31] (SJ v Wong Chun Wai)",
+            quoteText: "However, the trial judge failed to deal with any of the alternatives. The prosecution appealed by way of case stated. The Court of Appeal unanimously allowed the appeal and ordered the defendant to be tried (before a different judge) for dangerous driving instead."
+          }
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // 2. DATABASE: TABLE OF CASES & TABLE OF LEGISLATION VAULT (FROM TEXTBOOK)
+    // =========================================================================
+    const VAULT_DATA = [
+      // --- TABLE OF CASES ---
+      {
+        type: "case",
+        title: "Woolmington v DPP [1935] AC 462",
+        ref: "Textbook [1-18] â€¢ Burden of Proof",
+        rule: "Establishes the 'golden thread' of criminal law: the prosecution bears the legal burden of proving the accused's guilt beyond reasonable doubt, subject only to insanity and statutory exceptions.",
+        quote: "Throughout the web of the English Criminal Law one golden thread is always to be seen, that is the duty of the prosecution to prove the prisoner's guilt..."
+      },
+      {
+        type: "case",
+        title: "R v Galbraith [1981] 2 All ER 1060",
+        ref: "Textbook [1-22] â€¢ Submission of No Case to Answer",
+        rule: "A judge must stop a case if there is no evidence of the crime, or if prosecution evidence taken at its highest is so tenuous that no properly directed jury could convict. Applied in HK in A-G v Li Fook-shiu Ronald [1990] 1 HKC 1.",
+        quote: "Where the judge comes to the conclusion that the prosecution evidence, taken at its highest, is such that a jury properly directed could not properly convict upon it, it is his duty upon a submission being made, to stop the case."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Lam Kwong Wai (2006) 9 HKCFAR 574",
+        ref: "Textbook [1-25], [4-63] â€¢ Reverse Onus & Remedial Interpretation",
+        rule: "Distinguishes an evidential burden (raising a reasonable doubt, consistent with presumption of innocence) from a persuasive burden (balance of probabilities), and applies remedial interpretation to read down unconstitutional reverse onuses.",
+        quote: "An evidential burden, unlike a persuasive burden, does not expose the defendant to the risk of conviction because he fails to prove some matter on which he bears an evidential onus."
+      },
+      {
+        type: "case",
+        title: "Chiang Lily v Secretary for Justice (2010) 13 HKCFAR 208",
+        ref: "Textbook [1-76] â€¢ Venue of Trial",
+        rule: "In Hong Kong, an accused has no right to elect a jury trial; the Secretary for Justice possesses sole prerogative discretion to select whether a case is tried in the Magistracy, District Court, or Court of First Instance.",
+        quote: "Thus, a case can be placed for trial either in the Magistracy, the District Court, or the Court of First Instance of the High Court, irrespective of the defendant's wishes."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Ngo Van Nam [2016] 5 HKLRD 1",
+        ref: "Textbook [1-82], [1-85] â€¢ Guilty Plea Sentencing Discount",
+        rule: "A defendant is entitled to the full one-third sentencing discount only if he pleads guilty at the earliest opportunity (before a Magistrate on committal for CFI cases, or on Plea Day in the District Court).",
+        quote: "After a recent change in sentencing policy imposed by HKSAR v Ngo Van Nam, a defendant is only entitled to a full one-third sentencing discount if he pleaded guilty before a Magistrate on committal."
+      },
+      {
+        type: "case",
+        title: "Fagan v Metropolitan Police Commissioner [1969] 1 QB 439",
+        ref: "Textbook [2-7], [6-20] â€¢ Continuing Act & Concurrence",
+        rule: "Where an actus reus is a continuing act (parking a car on a constable's foot), mens rea superimposed later during the continuing act suffices to establish criminal liability.",
+        quote: "It is not necessary that mens rea should be present at the inception of the actus reus; it can be superimposed on an existing act."
+      },
+      {
+        type: "case",
+        title: "Thabo Meli v The Queen [1954] 1 All ER 373",
+        ref: "Textbook [2-10] â€¢ Single Transaction Rule",
+        rule: "Where a defendant strikes a victim with intent to kill and, wrongly believing him dead, throws him off a cliff where he dies of exposure, the sequence of acts is treated as one indivisible transaction.",
+        quote: "It appears to their Lordships impossible to divide up what was really one series of acts in this way."
+      },
+      {
+        type: "case",
+        title: "R v Le Brun [1992] QB 61",
+        ref: "Textbook [2-13]â€“[2-15] â€¢ Single Transaction & Concealment",
+        rule: "Extends the single transaction rule even where the fatal second act (dropping an unconscious victim) was accidental, provided it was done to conceal the original unlawful assault rather than to help the victim.",
+        quote: "That is certainly so where the appellant's subsequent actions which caused death, after the initial unlawful blow, are designed to conceal his commission of the original unlawful assault."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Wan Kim Chung [2013] HKCU 1127",
+        ref: "Textbook [2-19] â€¢ Single Transaction in Hong Kong",
+        rule: "Hong Kong Court of Appeal affirmed that strangling a victim unconscious with intent to cause GBH and dumping her body into the sea to conceal the crime forms one indivisible transaction for murder.",
+        quote: "By this means the common law overcomes problems that might otherwise be posed by a break in the chain of causation or by a lack of coincidence of actus reus and mens rea."
+      },
+      {
+        type: "case",
+        title: "R v Stone and Dobinson [1977] QB 354",
+        ref: "Textbook [2-40]â€“[2-41] â€¢ Omission: Voluntary Assumption of Duty",
+        rule: "Taking an infirm relative into one's home creates a voluntary assumption of a duty of care; failing to care for her or summon medical/social help constitutes the actus reus of gross negligence manslaughter.",
+        quote: "[The jurors] were entitled to conclude that once Fanny became helplessly infirm... the appellants were, in the circumstances, obliged either to summon help or else to care for Fanny themselves."
+      },
+      {
+        type: "case",
+        title: "R v Miller [1983] 2 AC 161",
+        ref: "Textbook [2-26], [2-47] â€¢ Omission: Duty to Remove Danger",
+        rule: "When a person inadvertently creates a dangerous situation (dropping a lit cigarette on a mattress) and becomes aware of it, failing to take reasonable steps to remove or reduce the danger supplies the actus reus for arson.",
+        quote: "...if, when he does become aware that the events in question have happened as a result of his own act, he does not try to prevent or reduce the risk of damage by his own efforts or if necessary by sending for help..."
+      },
+      {
+        type: "case",
+        title: "R v White [1910] 2 KB 124",
+        ref: "Textbook [2-58] â€¢ Factual Causation ('But For' Test)",
+        rule: "Where D put cyanide in his mother's drink, but she died of a heart attack before consuming a fatal dose, factual causation for murder failed ('but for' test not met); D was guilty only of attempted murder.",
+        quote: "To apply the test, one may conveniently ask oneself a hypothetical question: but for the defendant's act, would the alleged result have occurred at the time or in the way that it did?"
+      },
+      {
+        type: "case",
+        title: "R v Smith [1959] 2 QB 35 & R v Cheshire [1991] 3 All ER 670",
+        ref: "Textbook [2-66]â€“[2-68] â€¢ Legal Causation & Medical Treatment",
+        rule: "Poor or negligent medical treatment does not break the chain of causation unless it is 'palpably wrong' (R v Jordan) or so independent and potent as to render the original wound insignificant (applied in R v Wong Tat-chuen [1997] HKLRD 433).",
+        quote: "...if at the time of death the original wound is still an operating cause and a substantial cause, then the death can properly be said to be the result of the wound..."
+      },
+      {
+        type: "case",
+        title: "R v Kennedy (No 2) [2008] 1 AC 269",
+        ref: "Textbook [2-77] â€¢ Voluntary Act of Victim",
+        rule: "Informed adults of sound mind are autonomous agents; where D prepares a heroin syringe and V voluntarily self-injects and dies, V's free, deliberate, and informed act breaks the chain of causation for manslaughter.",
+        quote: "Thus D is not to be treated as causing V to act in a certain way if V makes a voluntary and informed decision to act in that way rather than another."
+      },
+      {
+        type: "case",
+        title: "R v Blaue [1975] 3 All ER 446",
+        ref: "Textbook [2-82] â€¢ Thin-Skull (Eggshell-Skull) Rule",
+        rule: "A defendant must take his victim as he finds himâ€”including the victim's religious beliefs. A Jehovah's Witness's refusal of a life-saving blood transfusion after being stabbed does not break causation.",
+        quote: "The rule is that an accused takes his victim as he finds him."
+      },
+      {
+        type: "case",
+        title: "R v Woollin [1999] 1 AC 82",
+        ref: "Textbook [3-23] â€¢ Oblique Intent & Virtual Certainty",
+        rule: "Where D's direct purpose was not death or serious harm, the jury is not entitled to find intention unless death or serious bodily harm was a virtual certainty as a result of D's actions and D appreciated that such was the case.",
+        quote: "...the jury should be directed that they are not entitled to infer the necessary intention, unless they feel sure that death or serious bodily harm was a virtual certainty (barring some unforeseen intervention) as a result of the defendant's actions and that the defendant appreciated that such was the case."
+      },
+      {
+        type: "case",
+        title: "R v Cunningham [1957] 2 QB 396",
+        ref: "Textbook [3-27]â€“[3-29], [3-57] â€¢ Subjective Recklessness & Malice",
+        rule: "Defines 'maliciously' in statutory offences as actual intention or subjective recklessness (where D foresaw the particular kind of harm might occur and yet went on to take the risk).",
+        quote: "In any statutory definition of a crime, malice must be taken not in the old vague sense of wickedness in general but as requiring either (1) An actual intention... or (2) recklessness as to whether such harm should occur or not..."
+      },
+      {
+        type: "case",
+        title: "R v G [2004] 1 AC 1034",
+        ref: "Textbook [3-43]â€“[3-46] â€¢ Return to Subjective Recklessness",
+        rule: "Overruled R v Caldwell objective recklessness. A person acts recklessly only if he is aware of a risk that a circumstance exists or a result will occur, and it is unreasonable to take that risk in the circumstances known to him.",
+        quote: "It is neither moral nor just to convict a defendant (least of all a child) on the strength of what someone else would have apprehended if the defendant himself had no such apprehension."
+      },
+      {
+        type: "case",
+        title: "Sin Kam Wah v HKSAR (2005) 8 HKCFAR 192",
+        ref: "Textbook [3-47]â€“[3-53] â€¢ Subjective Recklessness in Hong Kong",
+        rule: "The Court of Final Appeal adopted R v G in Hong Kong and expressly overruled R v Chau Ming Cheong and R v Dung Shue Wah, establishing subjective recklessness across Hong Kong criminal law.",
+        quote: "Henceforth juries should be directed in terms of the subjective interpretation of recklessness upheld in R v G & Another [2004] 1 AC 1034."
+      },
+      {
+        type: "case",
+        title: "R v Latimer (1886) 17 QBD 359 & HKSAR v Ng Man Yuen Avery (2019) 22 HKCFAR 241",
+        ref: "Textbook [3-61], [3-66]â€“[3-69] â€¢ Transferred Malice",
+        rule: "Malice directed at one victim transfers to an unintended victim of the same type of offence (but cannot transfer between different offence types, such as person to property: R v Pembliton).",
+        quote: "It is common knowledge that a man who has unlawful and malicious intent against another, and, in attempting to carry it out, injures a third person, is guilty of what the law deems malice against the person injured..."
+      },
+      {
+        type: "case",
+        title: "Gammon (Hong Kong) Ltd v A-G of Hong Kong [1985] AC 1",
+        ref: "Textbook [4-6]â€“[4-8] â€¢ Presumption of Mens Rea",
+        rule: "Sets out the 5 classic propositions for determining whether a statutory offence displaces the presumption of mens rea (especially where the statute addresses an issue of social concern/public safety and strict liability promotes vigilance).",
+        quote: "(1) there is a presumption of law that mens rea is required before a person can be held guilty of a criminal offence; (2) the presumption is particularly strong where the offence is 'truly criminal' in character..."
+      },
+      {
+        type: "case",
+        title: "Hin Lin Yee v HKSAR (2010) 13 HKCFAR 142 & Kulemesin v HKSAR (2013) 16 HKCFAR 195",
+        ref: "Textbook [4-27]â€“[4-37] â€¢ Five Mens Rea Alternatives",
+        rule: "CFA established 5 alternatives for statutory offences: (1) full mens rea; (2) honest & reasonable belief with evidential burden on D; (3) honest & reasonable belief with persuasive burden on D; (4) confined to statutory defences; (5) absolute liability.",
+        quote: "Where a serious offence carrying severe penalties is involved, a reverse onus may also be regarded as making excessive inroads into both the presumption of mens rea and the constitutionally protected presumption of innocence."
+      },
+      {
+        type: "case",
+        title: "HKSAR v So Wai Lun (2006) 9 HKCFAR 530",
+        ref: "Textbook [4-22]â€“[4-25], [7-37] â€¢ Absolute Liability in CO s 124",
+        rule: "CFA upheld the constitutionality of Crimes Ordinance s 124 (unlawful sexual intercourse with a girl under 16) as an offence of absolute liability; honest or reasonable belief that the girl was 16+ is no defence.",
+        quote: "Where the legislature has enacted an absolute offence, the judiciary will not strike down the offence merely on the basis of a view that it would be preferable for the offence to admit of a defence of belief or reasonable belief."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Lau Cheong (2002) 5 HKCFAR 415",
+        ref: "Textbook [5-24] â€¢ Mens Rea of Murder (GBH Rule)",
+        rule: "CFA confirmed that intention to cause grievous bodily harm (really serious bodily harm) suffices as the mens rea for murder in Hong Kong and is constitutional.",
+        quote: "Notwithstanding their criticisms, the very same judges recognise that in the light of the authorities, the grievous bodily harm rule is settled law..."
+      },
+      {
+        type: "case",
+        title: "DPP v Camplin [1978] AC 705 & Luc Thiet Thuan v R [1997] AC 131",
+        ref: "Textbook [5-44]â€“[5-53] â€¢ Reasonable Man in Provocation",
+        rule: "Under Homicide Ordinance s 4, the 'reasonable man' has the defendant's age and sex (Camplin) and characteristics affecting the gravity of the taunt, but NOT mental infirmities affecting self-control (Luc Thiet Thuan).",
+        quote: "...to require old heads upon young shoulders is inconsistent with the law's compassion to human infirmity."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Liang Yaoqiang (2017) 20 HKCFAR 1",
+        ref: "Textbook [5-58]â€“[5-63] â€¢ Provocation: 'Do As He Did'",
+        rule: "In a frenzied attack (213 wounds), 'do as he did' in HO s 4 means losing self-control and killing with intent to kill or cause GBH (killing simpliciter)â€”not reacting in the exact same physical manner.",
+        quote: "...it is not a question of whether that ordinary person might have reacted in exactly the same way as did the defendant. It is sufficient were you to find that the provocation... would or might cause an ordinary person... to lose self-control and cause [the victim's] death..."
+      },
+      {
+        type: "case",
+        title: "R v Adomako [1995] 1 AC 171 & HKSAR v Mak Wan Ling [2019] HKCFA 37",
+        ref: "Textbook [5-110], [5-127]â€“[5-128] â€¢ Gross Negligence Manslaughter",
+        rule: "CFA settled in Mak Wan Ling (affirming Lai Chun Ho) that gross negligence manslaughter is proved by an objective standard of reasonableness (serious and obvious risk of death), without requiring subjective awareness by D.",
+        quote: "In the offence of manslaughter by gross negligence, the element of gross negligence... is proved by application of the objective standard of reasonableness, there being no additional requirement that the prosecution must also prove that the defendant was subjectively aware..."
+      },
+      {
+        type: "case",
+        title: "R v Ireland and Burstow [1998] AC 147",
+        ref: "Textbook [6-7], [6-10], [6-31] â€¢ Silent Calls & Psychiatric Harm",
+        rule: "Silent telephone calls causing apprehension of immediate unlawful violence can constitute technical assault, and recognised psychiatric injury can constitute ABH (s 39) or GBH (s 19).",
+        quote: "There is no reason why something said should be incapable of causing an apprehension of immediate personal violence... I would, therefore, reject the proposition that an assault can never be committed by words."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Yeung May Wan (2006) 9 HKCFAR 144",
+        ref: "Textbook [6-61]â€“[6-68] â€¢ Lawful Arrest & Due Execution of Duty",
+        rule: "Police power of arrest under PFO s 50(1) requires genuine and reasonable suspicion based on facts constituting an offence; where an arrest is unlawful, a citizen may use reasonable force to resist and is not guilty of obstructing/assaulting an officer in due execution of duty.",
+        quote: "...if a person is subjected to an unlawful arrest by a police officer, the continued detention of that person pursuant to the arrest perpetuates the unlawfulness and constitutes false imprisonment."
+      },
+      {
+        type: "case",
+        title: "R v Brown [1994] 1 AC 212",
+        ref: "Textbook [6-73]â€“[6-77] â€¢ Limits of Consent to Bodily Harm",
+        rule: "Consent is a defence to common assault, but public policy prevents a victim from consenting to the intentional infliction of actual bodily harm or wounding (e.g., sadomasochism or street fighting: A-G's Ref No 6 of 1980) unless within recognised exceptions (surgery, sport, tattooing).",
+        quote: "I am not prepared to invent a defence of consent for sado-masochistic encounters which breed and glorify cruelty..."
+      },
+      {
+        type: "case",
+        title: "DPP v Morgan [1976] AC 182 & R v Olugboja [1982] QB 320",
+        ref: "Textbook [7-12], [7-21]â€“[7-22] â€¢ Rape: Consent vs Submission & Genuine Belief",
+        rule: "Consent is distinct from reluctant submission (Olugboja). Under Hong Kong law (CO s 118), a genuine (honest) belief that the woman consented negates the mens rea of rape even if unreasonable, though reasonableness is evidence of genuineness (Morgan).",
+        quote: "Since honest belief clearly negatives intent, the reasonableness or otherwise of that belief can only be evidence for or against the view that the belief and therefore the intent was actually held."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Tang Siu Fung (No 1) [2010] 2 HKLRD 1013",
+        ref: "Textbook [7-17], [14-107] â€¢ Intoxicated Complainant & Capacity to Consent",
+        rule: "Where a complainant is voluntarily intoxicated, drunken consent is still valid consent if she retained the capacity to choose and indicated consent; however, if unconscious or too intoxicated to decide, there is no consent.",
+        quote: "The basic consideration as to whether a complainant had consented to sexual intercourse is whether she was able to indicate her consent to sexual intercourse."
+      },
+      {
+        type: "case",
+        title: "R v Gomez [1993] AC 442 & R v Hinks [2001] 2 AC 241",
+        ref: "Textbook [8-11]â€“[8-15] â€¢ Appropriation in Theft",
+        rule: "Appropriation under Theft Ordinance s 4(1) is a neutral act of assuming any right of the owner and occurs even where the owner consents to the transfer or makes an indefeasible civil gift (applied in HKSAR v Wong Cho Sum [2001] 3 HKLRD 76).",
+        quote: "...the word 'appropriation' in isolation [is] an objective description of the act done irrespective of the mental state of either the owner or the accused..."
+      },
+      {
+        type: "case",
+        title: "R v Ghosh [1982] QB 1053 & Mo Yuk Ping v HKSAR (2007) 10 HKCFAR 386",
+        ref: "Textbook [8-32], [8-52], [8-131] â€¢ Test for Dishonesty",
+        rule: "Hong Kong courts apply the two-stage Ghosh test for dishonesty: (1) dishonest by ordinary standards of reasonable and honest people; and (2) D himself realised his conduct was dishonest by those standards (notwithstanding UK's Ivey v Genting Casinos).",
+        quote: "In determining whether the prosecution has proved that the defendant was acting dishonestly, a jury must first of all decide whether according to the ordinary standards of reasonable and honest people what was done was dishonest."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Khan Asif [2010] 1 HKLRD 404 & R v Collins [1973] QB 100",
+        ref: "Textbook [8-81]â€“[8-88] â€¢ Burglary: Entry as a Trespasser",
+        rule: "In Hong Kong (Khan Asif), inserting any part of the body (such as popping one's head through a window) suffices as 'entry' for burglary under TO s 11, and D must enter knowing or being reckless as to being a trespasser (Collins).",
+        quote: "...the old common law position applies, namely, that the insertion of any part of the body, however small, is sufficient."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Chu Tsun Wai (2019) 22 HKCFAR 30",
+        ref: "Textbook [9-7]â€“[9-10] â€¢ Criminal Damage & Misuse of Computer (DDoS)",
+        rule: "CFA held that a DDoS attack bombarding a bank's website server causes the computer to 'function other than as it has been established to function' under CO s 59(1A)(a), constituting criminal damage under s 60(1).",
+        quote: "The website and its server were established to provide banking services, not to deal with a multitude of requests made for no purpose except to inconvenience the bank..."
+      },
+      {
+        type: "case",
+        title: "Warner v MPC [1969] 2 AC 256 & HKSAR v Hung Chan Wa (2006) 9 HKCFAR 614",
+        ref: "Textbook [10-17], [10-31]â€“[10-35] â€¢ Possession of Dangerous Drugs",
+        rule: "Possession requires physical custody/control plus knowledge of the existence of the thing (not its exact chemical type). Under Hung Chan Wa, the DDO s 47 presumptions of possession and knowledge impose only an evidential burden on D.",
+        quote: "You may possess a thing without knowing or comprehending its nature: but you do not possess it unless you know you have it."
+      },
+      {
+        type: "case",
+        title: "Secretary for Justice v Leung Kwok Wah [2012] 5 HKLRD 556",
+        ref: "Textbook [12-4], [12-22]â€“[12-29] â€¢ Unlawful Assembly Elements",
+        rule: "Sets out the 3 elements of POO s 18 unlawful assembly: (1) 3+ persons assembling with corporate common purpose; (2) disorderly/intimidating/insulting/provocative conduct; (3) objective likelihood of causing reasonable apprehension of an imminent breach of the peace.",
+        quote: "It must be emphasised that s. 18 is very much a preventive measure. There is no need for a breach of the peace to have occurred."
+      },
+      {
+        type: "case",
+        title: "Secretary for Justice v Cheng Ka Yee (2019) 22 HKCFAR 97",
+        ref: "Textbook [13-15], [13-18] â€¢ Dishonest Use of Computer (CO s 161)",
+        rule: "CFA held that 'obtains access to a computer' in Crimes Ordinance s 161 does not apply to a person using their own device (e.g., personal smartphone) without gaining access to another person's computer.",
+        quote: "As a matter of language one always 'obtains' access to something to which one did not have access before."
+      },
+      {
+        type: "case",
+        title: "R v Hasan [2005] 2 AC 467",
+        ref: "Textbook [14-8], [14-26] â€¢ Duress Rules & Voluntary Association",
+        rule: "Summarises the 7 strict rules of duress: threat of imminent death/serious injury to D or close person; objective reasonable firmness test; no reasonable escape route; barred if D voluntarily associated with known criminals where compulsion was reasonably foreseeable; unavailable for murder.",
+        quote: "The policy of the law must be to discourage association with known criminals, and it should be slow to excuse the criminal conduct of those who do so."
+      },
+      {
+        type: "case",
+        title: "R v Beckford [1988] AC 130 & R v Williams (Gladstone) [1987] 3 All ER 411",
+        ref: "Textbook [14-73], [14-77] â€¢ Self-Defence & Honest Mistake",
+        rule: "Self-defence has a subjective limb (did D honestly believe force was necessary, even if mistaken unreasonably?) and an objective limb (was the force reasonable in the circumstances as D honestly believed them to be?). Pre-emptive strikes are permitted.",
+        quote: "Furthermore a man about to be attacked does not have to wait for his assailant to strike the first blow or fire the first shot; circumstances might justify a pre-emptive strike."
+      },
+      {
+        type: "case",
+        title: "DPP v Majewski [1977] AC 443 & R v O'Grady [1987] QB 995",
+        ref: "Textbook [14-88]â€“[14-92], [14-115] â€¢ Voluntary Intoxication",
+        rule: "Voluntary intoxication may negate mens rea for specific intent crimes (murder, theft, s 17 GBH), but is no defence to basic intent crimes (assault, manslaughter, s 19 GBH) and cannot support a drunken mistake in self-defence (O'Grady).",
+        quote: "The drunkenness is itself an intrinsic, an integral part of the crime... Together they add up to criminal recklessness."
+      },
+      {
+        type: "case",
+        title: "R v Shivpuri [1987] AC 1",
+        ref: "Textbook [15-46]â€“[15-47] â€¢ Attempting the Impossible",
+        rule: "Overruled Anderton v Ryan. Under CO s 159G(2), a person who does a more-than-merely-preparatory act intending to commit an offence (e.g. dealing drugs) is guilty of attempt even if the substance is harmless vegetable powder.",
+        quote: "What turns what would otherwise, from the point of view of the criminal law, be an innocent act into a crime is the intent of the actor to commit an offence."
+      },
+      {
+        type: "case",
+        title: "HKSAR v Chan Kam Shing (2016) 19 HKCFAR 640",
+        ref: "Textbook [15-54], [15-106]â€“[15-113] â€¢ Joint Enterprise Retained in HK",
+        rule: "CFA rejected the UK Supreme Court's decision in R v Jogee and retained the Chan Wing Siu doctrine of extended joint criminal enterprise in Hong Kong: a participant is liable for a further crime foreseen as a possible incident of the joint venture.",
+        quote: "In my view, Jogee's abolition of the joint criminal enterprise doctrine... deprives the law of a valuable principle for dealing with dynamic situations involving evidential and situational uncertainties..."
+      },
+
+      // --- TABLE OF LEGISLATION ---
+      {
+        type: "statute",
+        title: "Basic Law of the HKSAR â€” Articles 8, 18, 39, 63, 86, 87",
+        ref: "Textbook [1-5], [1-16], [1-19], [1-55] â€¢ Constitutional Framework",
+        rule: "Preserves common law in Hong Kong (Arts 8, 18), incorporates ICCPR (Art 39), guarantees prosecutorial independence of the Department of Justice free from interference (Art 63), and entrenches the presumption of innocence (Arts 86â€“87).",
+        quote: "Article 63: The Department of Justice of the Hong Kong Special Administrative Region shall control criminal prosecutions, free from any interference."
+      },
+      {
+        type: "statute",
+        title: "Hong Kong Bill of Rights Ordinance (Cap 383) â€” s 8 (Arts 5, 11, 12)",
+        ref: "Textbook [1-5], [1-19], [4-58], [6-49] â€¢ Human Rights Protections",
+        rule: "Incorporates ICCPR protections: right to liberty and to be informed of reasons for arrest (Art 5), presumption of innocence (Art 11(1)), and prohibition against retrospective criminal offences/penalties (Art 12).",
+        quote: "Art 5(2): Anyone who is arrested shall be informed, at the time of arrest, of the reasons for his arrest and shall be promptly informed of any charges against him."
+      },
+      {
+        type: "statute",
+        title: "Offences Against the Person Ordinance (Cap 212) â€” s 2 & s 7 (Murder & Manslaughter)",
+        ref: "Textbook [5-3], [5-95] â€¢ Homicide Penalties",
+        rule: "Section 2 prescribes mandatory life imprisonment for murder (with discretion for offenders under 18). Section 7 makes manslaughter punishable by up to life imprisonment and a fine.",
+        quote: "s 2: Any person who is convicted of murder shall be imprisoned for life. However, if it appears to the court that a person convicted of a murder was under 18 years of age at the time of the offence, the court has a discretion..."
+      },
+      {
+        type: "statute",
+        title: "Offences Against the Person Ordinance (Cap 212) â€” ss 17, 19, 36, 39, 40",
+        ref: "Textbook [6-1], [6-23], [6-28], [6-41] â€¢ Non-Fatal Offences",
+        rule: "s 40: Common Assault (1 yr); s 39: Assault Occasioning Actual Bodily Harm (3 yrs); s 19: Unlawful & malicious wounding or inflicting GBH (3 yrs, Cunningham mens rea); s 17: Wounding/causing GBH with intent (life); s 36(b): Assaulting/obstructing police officer in due execution of duty (2 yrs).",
+        quote: "s 19: Any person who unlawfully and maliciously wounds or inflicts any grievous bodily harm upon any other person, either with or without any weapon or instrument, shall be guilty of an offence..."
+      },
+      {
+        type: "statute",
+        title: "Homicide Ordinance (Cap 339) â€” ss 3, 4, 5 (Partial Defences to Murder)",
+        ref: "Textbook [5-30], [5-74], [5-91] â€¢ Diminished Responsibility, Provocation & Suicide Pacts",
+        rule: "Reduces murder to manslaughter: s 3 Diminished Responsibility (persuasive burden on D); s 4 Provocation (subjective loss of self-control + objective reasonable man standard); s 5 Survivor of a Suicide Pact (burden on D).",
+        quote: "s 4: ...the question whether the provocation was enough to make a reasonable man do as he did shall be left to be determined by the jury..."
+      },
+      {
+        type: "statute",
+        title: "Crimes Ordinance (Cap 200) â€” ss 24, 59, 60, 64 (Intimidation & Criminal Damage)",
+        ref: "Textbook [9-1], [9-6], [9-14], [9-19], [13-2] â€¢ Property Damage & Threats",
+        rule: "s 24: Criminal intimidation (threatening injury/illegal act with intent to alarm or coerce); s 60(1): Criminal damage; s 60(2): Aggravated criminal damage endangering life; s 60(3): Arson (damage by fire); s 64: Lawful excuse (honest belief in consent or property protection).",
+        quote: "s 60(1): A person who without lawful excuse destroys or damages any property belonging to another intending to destroy or damage any such property or being reckless as to whether any such property would be destroyed or damaged shall be guilty of an offence."
+      },
+      {
+        type: "statute",
+        title: "Crimes Ordinance (Cap 200) â€” ss 118, 122, 123, 124, 146 (Sexual Offences)",
+        ref: "Textbook [7-4], [7-37], [7-40], [7-49], [7-67] â€¢ Part XII Sexual Offences",
+        rule: "s 118: Rape (life); s 122: Indecent assault (10 yrs, under-16 cannot consent); s 123: Intercourse with girl under 13 (life); s 124: Intercourse with girl under 16 (5 yrs, absolute liability); s 146: Indecent conduct towards child under 16 (10 yrs).",
+        quote: "s 118(3): A man commits rape if â€“ (a) he has unlawful sexual intercourse with a woman who at the time of the intercourse does not consent to it; and (b) at that time he knows that she does not consent to the intercourse or he is reckless as to whether she consents to it."
+      },
+      {
+        type: "statute",
+        title: "Crimes Ordinance (Cap 200) â€” ss 159A, 159G, 160, 161 (Inchoate, Loitering & Computer)",
+        ref: "Textbook [13-12], [13-26], [15-4], [15-27] â€¢ Conspiracy, Attempt & Computer Offences",
+        rule: "s 159A: Statutory conspiracy; s 159G: Attempt (act more than merely preparatory, including impossible attempts under s 159G(2)); s 160: Loitering; s 161: Access to computer with criminal or dishonest intent (5 yrs).",
+        quote: "s 159G(1): A person who, intending to commit an offence to which this section applies, does an act that is more than merely preparatory to the commission of the offence is guilty of attempting to commit the offence."
+      },
+      {
+        type: "statute",
+        title: "Theft Ordinance (Cap 210) â€” ss 2â€“7, 10, 11, 12, 16A, 18C, 24",
+        ref: "Textbook [8-4]â€“[8-116] â€¢ Dishonesty Offences",
+        rule: "s 2: Theft (dishonestly appropriating property belonging to another with intent to permanently deprive); s 10: Robbery (theft + force/threat of force immediately before/at time); s 11: Burglary; s 12: Aggravated burglary; s 16A: Fraud; s 18C: Making off without payment; s 24: Handling stolen goods.",
+        quote: "s 2(1): A person commits theft if he dishonestly appropriates property belonging to another with the intention of permanently depriving the other of it..."
+      },
+      {
+        type: "statute",
+        title: "Dangerous Drugs Ordinance (Cap 134) â€” ss 2, 4, 8, 47",
+        ref: "Textbook [10-4], [10-28], [10-37] â€¢ Drug Possession & Trafficking",
+        rule: "s 4: Trafficking in dangerous drugs (life imprisonment & HK$5M fine); s 8: Simple possession/consumption (7 yrs on indictment); s 47: Statutory presumptions of possession and knowledge from custody of container/keys (read down to evidential burden in Hung Chan Wa).",
+        quote: "s 47(2): Any person who is proved or presumed to have had a dangerous drug in his possession shall, until the contrary is proved, be presumed to have known the nature of such drug."
+      },
+      {
+        type: "statute",
+        title: "Road Traffic Ordinance (Cap 374) â€” ss 36, 36A, 37, 38, 39B, 63",
+        ref: "Textbook [2-50], [11-2], [11-33] â€¢ Driving Offences",
+        rule: "s 36: Causing death by dangerous driving (10 yrs); s 36A: Causing GBH by dangerous driving (7 yrs); s 37: Dangerous driving ('far below' competent & careful driver); s 38: Careless driving ('without due care and attention'); s 39B: Screening breath test duty.",
+        quote: "s 38(2): A person drives carelessly within the meaning of this section if on a road he drives a vehicle without due care and attention or without reasonable consideration for other persons using the road."
+      },
+      {
+        type: "statute",
+        title: "Public Order Ordinance (Cap 245) â€” ss 2, 18, 19, 33",
+        ref: "Textbook [12-3], [12-33], [12-41] â€¢ Unlawful Assembly, Riot & Offensive Weapons",
+        rule: "s 18: Unlawful assembly (3+ persons acting disorderly/intimidating/insulting/provocative likely to cause reasonable fear of breach of peace, 5 yrs); s 19: Riot (unlawful assembly + breach of peace, 10 yrs); s 33: Possession of offensive weapon in public place without lawful authority or reasonable excuse (3 yrs).",
+        quote: "s 33(1): Any person who, without lawful authority or reasonable excuse, has with him in any public place any offensive weapon shall be guilty of an offence..."
+      },
+      {
+        type: "statute",
+        title: "Police Force Ordinance (Cap 232) â€” ss 50, 51, 52, 54, 63",
+        ref: "Textbook [1-32], [6-42], [6-47], [6-53] â€¢ Police Powers & Obstruction",
+        rule: "s 50(1): Warrantless arrest on reasonable suspicion of arrestable/imprisonable offence; s 52(1): 48-hour max detention before magistrate; s 54(1): Stop, ID check & search on suspicious manner; s 54(2): Wider search on reasonable suspicion; s 63: Assaulting/resisting/misleading police in execution of duty.",
+        quote: "s 54(1): If a police officer finds any person in any street or other public place... who acts in a suspicious manner, it shall be lawful for the police officerâ€” (a) to stop the person for the purpose of demanding that he produce proof of his identity..."
+      },
+      {
+        type: "statute",
+        title: "Criminal Procedure Ordinance (Cap 221) â€” ss 65E, 82, 89, 101, 101A, 109B & Sch 3",
+        ref: "Textbook [1-50], [1-116], [1-143], [6-101], [7-6], [15-56] â€¢ Procedure & Complicity",
+        rule: "s 65E: Penetration suffices for sexual intercourse; s 82: Grounds for Court of Appeal allowing appeal + proviso; s 89: Aiding, abetting, counselling or procuring; s 101 & 101A: Citizen's arrest & reasonable force in preventing crime; s 109B & Sch 3: Suspended sentences & excepted offences.",
+        quote: "s 101A(1): A person may use such force as is reasonable in the circumstances in the prevention of crime or in effecting or assisting in the lawful arrest of offenders or suspected offenders..."
+      }
+    ];
+
+    // =========================================================================
+    // 3. APPLICATION STATE & INITIALIZATION
+    // =========================================================================
+    let state = {
+      activeTab: 'simulator',
+      xp: 0,
+      hearts: 5,
+      streak: 1,
+      completedIds: [],
+      lastScenarioId: null,
+      currentScenario: null,
+      currentStepIndex: 0,
+      selectedOption: null,
+      isAnswered: false,
+      stepMistakes: 0,
+      vaultFilter: 'all'
+    };
+
+    function initApp() {
+      renderScenarioDirectory();
+      renderVault();
+      updateHUD();
+      document.addEventListener('keydown', handleKeyShortcuts);
+    }
+
+    function updateHUD() {
+      document.getElementById('hud-xp').textContent = state.xp;
+      document.getElementById('hud-hearts').textContent = state.hearts;
+      document.getElementById('hud-streak').textContent = state.streak;
+      document.getElementById('completed-summary').textContent =
+        `${state.completedIds.length} of ${SCENARIOS.length} daily life cases completed.`;
+    }
+
+    function switchTab(tab) {
+      state.activeTab = tab;
+      const simView = document.getElementById('view-simulator');
+      const vaultView = document.getElementById('view-vault');
+      const tabSim = document.getElementById('tab-simulator');
+      const tabVault = document.getElementById('tab-vault');
+      const footer = document.getElementById('bottom-footer');
+      const progress = document.getElementById('progress-container');
+
+      if (tab === 'simulator') {
+        simView.classList.remove('hidden');
+        vaultView.classList.add('hidden');
+        tabSim.className = "px-4 py-2 rounded-xl font-bold text-[18px] border-2 transition-colors cursor-pointer bg-[#F0FDF4] border-[#58CC02] text-[#1E293B]";
+        tabVault.className = "px-4 py-2 rounded-xl font-bold text-[18px] border-2 transition-colors cursor-pointer bg-white border-[#E2E8F0] text-[#475569] hover:bg-[#F8FAFC]";
+        if (state.currentScenario && !document.getElementById('sim-stage').classList.contains('hidden')) {
+          footer.classList.remove('hidden');
+          progress.classList.remove('hidden');
+        }
+      } else {
+        simView.classList.add('hidden');
+        vaultView.classList.remove('hidden');
+        tabVault.className = "px-4 py-2 rounded-xl font-bold text-[18px] border-2 transition-colors cursor-pointer bg-[#F0FDF4] border-[#58CC02] text-[#1E293B]";
+        tabSim.className = "px-4 py-2 rounded-xl font-bold text-[18px] border-2 transition-colors cursor-pointer bg-white border-[#E2E8F0] text-[#475569] hover:bg-[#F8FAFC]";
+        footer.classList.add('hidden');
+        progress.classList.add('hidden');
+      }
+    }
+
+    function renderScenarioDirectory() {
+      const grid = document.getElementById('scenario-list-grid');
+      grid.innerHTML = SCENARIOS.map((sc, idx) => {
+        const done = state.completedIds.includes(sc.id);
+        return `
+          <button onclick="launchSpecificScenario('${sc.id}')"
+            class="text-left p-4 rounded-xl border-2 transition-colors cursor-pointer flex items-start justify-between gap-3 ${
+              done ? 'bg-[#F0FDF4] border-[#58CC02]' : 'bg-white border-[#E2E8F0] hover:bg-[#F8FAFC]'
+            }">
+            <div>
+              <div class="text-[14px] font-bold text-[#64748B] mb-0.5">${sc.badge}</div>
+              <div class="text-[19px] font-bold text-[#1E293B]">${idx + 1}. ${sc.title}</div>
+            </div>
+            <span class="px-2.5 py-1 rounded-lg text-[15px] font-bold shrink-0 ${
+              done ? 'bg-[#58CC02] text-white' : 'bg-[#F7F9FA] text-[#64748B] border border-[#E2E8F0]'
+            }">
+              ${done ? 'âœ“ Done' : 'Play'}
+            </span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    // =========================================================================
+    // 4. GAMEPLAY ENGINE: RANDOM DAILY LIFE & STEP PROGRESSION
+    // =========================================================================
+    function startNewLife() {
+      if (state.hearts <= 0) {
+        state.hearts = 5;
+        updateHUD();
+      }
+      const filter = document.getElementById('topic-filter').value;
+      let pool = SCENARIOS.filter(s => filter === 'all' || s.category === filter);
+      if (pool.length === 0) pool = SCENARIOS;
+
+      // Prefer uncompleted scenarios if available, and avoid immediate repeat
+      let uncompleted = pool.filter(s => !state.completedIds.includes(s.id) && s.id !== state.lastScenarioId);
+      let candidates = uncompleted.length > 0
+        ? uncompleted
+        : pool.filter(s => s.id !== state.lastScenarioId);
+      if (candidates.length === 0) candidates = pool;
+
+      const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+      launchSpecificScenario(chosen.id);
+    }
+
+    function launchSpecificScenario(id) {
+      if (state.hearts <= 0) {
+        state.hearts = 5;
+        updateHUD();
+      }
+      const sc = SCENARIOS.find(s => s.id === id);
+      if (!sc) return;
+
+      state.currentScenario = sc;
+      state.lastScenarioId = sc.id;
+      state.currentStepIndex = 0;
+      state.stepMistakes = 0;
+
+      document.getElementById('sim-home').classList.add('hidden');
+      document.getElementById('sim-summary').classList.add('hidden');
+      document.getElementById('sim-stage').classList.remove('hidden');
+      document.getElementById('progress-container').classList.remove('hidden');
+      document.getElementById('bottom-footer').classList.remove('hidden');
+
+      renderCurrentStep();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function renderCurrentStep() {
+      const sc = state.currentScenario;
+      const step = sc.steps[state.currentStepIndex];
+      state.selectedOption = null;
+      state.isAnswered = false;
+
+      // Update Progress Bar
+      const total = sc.steps.length;
+      const pct = Math.round(((state.currentStepIndex) / total) * 100);
+      document.getElementById('progress-bar').style.width = `${pct}%`;
+      document.getElementById('progress-label').textContent = `Step ${state.currentStepIndex + 1} / ${total}`;
+
+      // Populate Stage Card
+      document.getElementById('stage-badge').textContent = sc.badge;
+      document.getElementById('stage-step-type').textContent = step.stepType;
+      document.getElementById('stage-title').textContent = sc.title;
+      document.getElementById('stage-role').textContent = sc.role;
+      document.getElementById('stage-story').textContent = step.story;
+      document.getElementById('stage-question').textContent = step.question;
+
+      // Prompt Quote if any
+      const promptQuoteBox = document.getElementById('stage-prompt-quote');
+      if (step.promptQuote) {
+        promptQuoteBox.classList.remove('hidden');
+        document.getElementById('stage-prompt-quote-source').textContent = step.promptQuoteSource || "ORIGINAL TEXT";
+        document.getElementById('stage-prompt-quote-text').textContent = step.promptQuote;
+      } else {
+        promptQuoteBox.classList.add('hidden');
+      }
+
+      // Render Options
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = step.options.map((opt, index) => `
+        <button onclick="selectOption(${index})" id="opt-btn-${index}" class="duo-option">
+          <span class="key-badge">${index + 1}</span>
+          <span class="flex-1">${opt}</span>
+        </button>
+      `).join('');
+
+      // Reset Footer
+      const footer = document.getElementById('bottom-footer');
+      footer.style.backgroundColor = '#FFFFFF';
+      footer.style.borderColor = '#E2E8F0';
+      document.getElementById('footer-precheck').classList.remove('hidden');
+      document.getElementById('footer-feedback').classList.add('hidden');
+      document.getElementById('btn-check').disabled = true;
+    }
+
+    function selectOption(index) {
+      if (state.isAnswered) return;
+      state.selectedOption = index;
+
+      const step = state.currentScenario.steps[state.currentStepIndex];
+      step.options.forEach((_, idx) => {
+        const btn = document.getElementById(`opt-btn-${idx}`);
+        if (idx === index) {
+          btn.classList.add('selected');
+        } else {
+          btn.classList.remove('selected');
+        }
+      });
+
+      document.getElementById('btn-check').disabled = false;
+    }
+
+    function checkAnswer() {
+      if (state.selectedOption === null || state.isAnswered) return;
+      state.isAnswered = true;
+
+      const step = state.currentScenario.steps[state.currentStepIndex];
+      const isCorrect = state.selectedOption === step.correct;
+
+      // Disable all option buttons and apply visual styles
+      step.options.forEach((_, idx) => {
+        const btn = document.getElementById(`opt-btn-${idx}`);
+        btn.disabled = true;
+        btn.classList.remove('selected');
+        if (idx === step.correct) {
+          btn.classList.add('correct');
+        } else if (idx === state.selectedOption && !isCorrect) {
+          btn.classList.add('incorrect');
+        }
+      });
+
+      // Update Score / Hearts
+      if (isCorrect) {
+        state.xp += 25;
+      } else {
+        state.hearts = Math.max(0, state.hearts - 1);
+        state.stepMistakes += 1;
+      }
+      updateHUD();
+
+      // Show Duolingo-style Feedback Banner
+      const footer = document.getElementById('bottom-footer');
+      const precheck = document.getElementById('footer-precheck');
+      const feedback = document.getElementById('footer-feedback');
+      const fbIcon = document.getElementById('fb-icon');
+      const fbHeading = document.getElementById('fb-heading');
+      const btnContinue = document.getElementById('btn-continue');
+
+      precheck.classList.add('hidden');
+      feedback.classList.remove('hidden');
+
+      document.getElementById('fb-explanation').textContent = step.explanation;
+      document.getElementById('fb-quote-source').textContent = step.quoteSource;
+      document.getElementById('fb-quote-text').textContent = `"${step.quoteText}"`;
+
+      if (isCorrect) {
+        footer.style.backgroundColor = '#F0FDF4';
+        footer.style.borderColor = '#58CC02';
+        fbIcon.style.backgroundColor = '#58CC02';
+        fbIcon.textContent = 'âœ“';
+        fbHeading.style.color = '#46A302';
+        fbHeading.textContent = 'Correct! +25 XP';
+        btnContinue.className = 'duo-btn-primary w-full sm:min-w-[200px] py-3.5 px-8';
+        btnContinue.textContent = state.currentStepIndex === state.currentScenario.steps.length - 1 ? 'Finish Case' : 'Continue';
+      } else {
+        footer.style.backgroundColor = '#FEF2F2';
+        footer.style.borderColor = '#EA2B2B';
+        fbIcon.style.backgroundColor = '#EA2B2B';
+        fbIcon.textContent = '!';
+        fbHeading.style.color = '#EA2B2B';
+        fbHeading.textContent = state.hearts === 0 ? 'Out of Hearts! Review the Rule' : 'Review the Rule (-1 Heart)';
+        btnContinue.className = 'duo-btn-danger w-full sm:min-w-[200px] py-3.5 px-8';
+        btnContinue.textContent = state.hearts === 0 ? 'See Results' : 'Continue';
+      }
+    }
+
+    function nextStep() {
+      if (state.hearts === 0) {
+        showSummary(false);
+        return;
+      }
+
+      if (state.currentStepIndex < state.currentScenario.steps.length - 1) {
+        state.currentStepIndex += 1;
+        renderCurrentStep();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        showSummary(true);
+      }
+    }
+
+    function showSummary(completed) {
+      document.getElementById('progress-bar').style.width = '100%';
+      document.getElementById('sim-stage').classList.add('hidden');
+      document.getElementById('bottom-footer').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      document.getElementById('sim-summary').classList.remove('hidden');
+
+      const sc = state.currentScenario;
+      const summaryBadge = document.getElementById('summary-badge');
+      const summaryTitle = document.getElementById('summary-title');
+      const summaryDesc = document.getElementById('summary-desc');
+
+      if (completed) {
+        if (!state.completedIds.includes(sc.id)) {
+          state.completedIds.push(sc.id);
+        }
+        state.xp += 50;
+        updateHUD();
+        renderScenarioDirectory();
+
+        summaryBadge.className = 'inline-block px-4 py-1.5 rounded-xl bg-[#F0FDF4] border-2 border-[#58CC02] text-[#46A302] font-bold text-[18px]';
+        summaryBadge.textContent = 'CASE SOLVED â€¢ +50 BONUS XP';
+        summaryTitle.textContent = `Completed: ${sc.title}`;
+        summaryDesc.textContent = 'You successfully applied Hong Kong statutory rules and case precedents to this daily life scenario.';
+      } else {
+        summaryBadge.className = 'inline-block px-4 py-1.5 rounded-xl bg-[#FEF2F2] border-2 border-[#EA2B2B] text-[#EA2B2B] font-bold text-[18px]';
+        summaryBadge.textContent = 'OUT OF HEARTS';
+        summaryTitle.textContent = 'Hearts Depleted â€” Refill & Try Again!';
+        summaryDesc.textContent = 'Review the rules below, then click "Start Another Random Life" to refill your 5 hearts automatically.';
+      }
+
+      // Render Key Rules Summary
+      const takeaways = document.getElementById('summary-takeaways');
+      takeaways.innerHTML = `<div class="font-bold text-[20px] text-[#1E293B] mb-2">Case Authorities &amp; Rules Reviewed:</div>` +
+        sc.steps.map((st, i) => `
+          <div class="bg-white border border-[#E2E8F0] rounded-xl p-4">
+            <div class="text-[16px] font-bold text-[#46A302]">Step ${i + 1}: ${st.quoteSource}</div>
+            <div class="text-[18px] text-[#1E293B] mt-1">${st.explanation}</div>
+          </div>
+        `).join('');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function exitToHome() {
+      state.currentScenario = null;
+      document.getElementById('sim-stage').classList.add('hidden');
+      document.getElementById('sim-summary').classList.add('hidden');
+      document.getElementById('bottom-footer').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      document.getElementById('sim-home').classList.remove('hidden');
+      renderScenarioDirectory();
+    }
+
+    function resetProgress() {
+      state.hearts = 5;
+      state.xp = 0;
+      state.completedIds = [];
+      updateHUD();
+      renderScenarioDirectory();
+    }
+
+    // Keyboard Shortcuts (1-4 to select, Enter to check/continue)
+    function handleKeyShortcuts(e) {
+      if (state.activeTab !== 'simulator') return;
+      if (document.getElementById('sim-stage').classList.contains('hidden')) return;
+
+      if (['1', '2', '3', '4'].includes(e.key) && !state.isAnswered) {
+        const idx = parseInt(e.key, 10) - 1;
+        selectOption(idx);
+      } else if (e.key === 'Enter') {
+        if (!state.isAnswered && state.selectedOption !== null) {
+          checkAnswer();
+        } else if (state.isAnswered) {
+          nextStep();
+        }
+      }
+    }
+
+    // =========================================================================
+    // 5. CASE & STATUTE VAULT RENDERER
+    // =========================================================================
+    function setVaultFilter(filter) {
+      state.vaultFilter = filter;
+      ['all', 'case', 'statute'].forEach(f => {
+        const btn = document.getElementById(`vfilter-${f}`);
+        if (f === filter) {
+          btn.className = "px-4 py-3 rounded-xl font-bold text-[18px] border-2 bg-[#F0FDF4] border-[#58CC02] text-[#1E293B] cursor-pointer";
+        } else {
+          btn.className = "px-4 py-3 rounded-xl font-bold text-[18px] border-2 bg-white border-[#E2E8F0] text-[#475569] cursor-pointer";
+        }
+      });
+      renderVault();
+    }
+
+    function renderVault() {
+      const query = (document.getElementById('vault-search').value || '').trim().toLowerCase();
+      const filtered = VAULT_DATA.filter(item => {
+        const matchesType = state.vaultFilter === 'all' || item.type === state.vaultFilter;
+        const matchesText = !query ||
+          item.title.toLowerCase().includes(query) ||
+          item.ref.toLowerCase().includes(query) ||
+          item.rule.toLowerCase().includes(query) ||
+          item.quote.toLowerCase().includes(query);
+        return matchesType && matchesText;
+      });
+
+      document.getElementById('vault-count').textContent =
+        `Showing ${filtered.length} of ${VAULT_DATA.length} authorities from the Textbook Database`;
+
+      const list = document.getElementById('vault-list');
+      list.innerHTML = filtered.map(item => `
+        <article class="bg-white border-2 border-[#E2E8F0] rounded-2xl p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-3 py-1 rounded-lg font-bold text-[15px] uppercase ${
+              item.type === 'case'
+                ? 'bg-[#F0FDF4] border border-[#58CC02] text-[#46A302]'
+                : 'bg-[#F7F9FA] border border-[#CBD5E1] text-[#334155]'
+            }">
+              ${item.type === 'case' ? 'TABLE OF CASES' : 'TABLE OF LEGISLATION'}
+            </span>
+            <span class="text-[16px] font-bold text-[#64748B]">${item.ref}</span>
+          </div>
+
+          <h2 class="text-[22px] font-bold text-[#1E293B]">${item.title}</h2>
+          <p class="text-[19px] text-[#334155] leading-relaxed">${item.rule}</p>
+
+          <div class="quote-box !mb-0">
+            <div class="text-[15px] font-bold text-[#46A302] uppercase mb-1">Verbatim Rule / Judgment Excerpt</div>
+            <p class="text-[18px] italic text-[#1E293B]">"${item.quote}"</p>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    window.onload = initApp;
+  </script>
+</body>
+</html>
